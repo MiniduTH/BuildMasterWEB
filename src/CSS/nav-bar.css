@@ -29,22 +29,24 @@ nav li a:hover {
     text-decoration: underline;
   }
 
-img{
-  display: inline;
-}
-
 #nav-h1{
   display: inline;
-  padding-left: 40%;
 }
 
 nav input{
-  display: inline-block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
+  color:black;
+  text-align: left;
   height: 30px;
   margin-top: 9px ;
-  overflow: hidden;
-  float: right;
+  overflow:hidden;
+  float:inline-end;
+  a
+}
+.logo{
+  height:40px;
+  padding : 0;
+  margin: 0;
+  margin: auto;
+  display: inline;
+  align-items: center;
 }

@@ -1,0 +1,20 @@
+
+
+
+.center{
+  text-align: center;
+}
+
+.login-button {
+  float: inline-end;
+  padding: 10px 20px;
+  background-color: #FFA07A;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #FF7F50;
+}
