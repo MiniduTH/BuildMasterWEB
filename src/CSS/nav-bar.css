@@ -33,6 +33,7 @@ nav li a:hover {
   display: inline;
 }
 
+
 nav input{
   color:black;
   text-align: left;
@@ -40,8 +41,8 @@ nav input{
   margin-top: 9px ;
   overflow:hidden;
   float:inline-end;
-  a
 }
+
 .logo{
   height:40px;
   padding : 0;
