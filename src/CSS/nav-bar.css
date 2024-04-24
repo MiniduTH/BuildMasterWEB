@@ -1,19 +1,19 @@
 nav li {
-    list-style: none;
-    display:inline;
-    float: left; 
+  list-style: none;
+  display: inline-block; /* changed from inline to inline-block */
+  float: left;
 }
 
-nav>ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #414141;
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #414141;
 }
 
 nav li a {
-  display: inline-block;
+  display: block; /* changed from inline-block to block */
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -21,33 +21,34 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: black;
-   }
+  background-color: black;
+}
 
-  nav li.active {
-    background-color: rgb(44, 44, 44);
-    text-decoration: underline;
-  }
+nav li.active {
+  background-color: rgb(44, 44, 44);
+  text-decoration: underline;
+}
 
-#nav-h1{
+#nav-h1 {
   display: inline;
 }
 
-
-nav input{
-  color:black;
+nav input {
+  color: black;
   text-align: left;
   height: 30px;
-  margin-top: 9px ;
-  overflow:hidden;
-  float:inline-end;
+  margin-top: 9px;
+  overflow: hidden;
+  float: right; /* changed from inline-end to right */
+  padding: 0 10px; /* added for better spacing */
+  box-sizing: border-box; /* added to include padding in element's total width */
+  min-width: none;
 }
 
-.logo{
-  height:40px;
-  padding : 0;
+.logo {
+  height: 40px;
+  padding: 0;
   margin: 0;
-  margin: auto;
-  display: inline;
+  display: inline-block; /* changed from inline to inline-block */
   align-items: center;
 }

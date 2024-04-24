@@ -54,9 +54,18 @@ footer p{
     color: #000;
     text-decoration: none;
   }
+
+  footer a:hover{
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.5); 
+  }
   
   footer img{
     display: block;
     margin: 0 auto;
   }
   
+  .follow img{
+    display: inline;
+    width: 30px;
+    padding:20px 10px;
+  }
