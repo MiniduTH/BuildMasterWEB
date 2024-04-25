@@ -37,6 +37,10 @@
     background-color: #717171;
 }
 .why{
-    width:10px;
-    height:10px;
+    width:20px;
+    height:20px;
+}
+span{
+    color:green;
+    font-size: 25px;
 }
