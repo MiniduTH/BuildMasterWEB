@@ -16,3 +16,11 @@ table,th,td  {
     display: inline-block; /* changed from inline to inline-block */
     align-items: center;
   }
+th{
+    font-family:serif;
+    font-size: 20px; 
+}
+td{
+    font-family: cursive;
+    font-size: 16px;
+}
