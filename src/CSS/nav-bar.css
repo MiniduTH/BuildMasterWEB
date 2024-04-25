@@ -43,7 +43,7 @@ nav input {
   float: right; /* changed from inline-end to right */
   padding: 0 10px; /* added for better spacing */
   box-sizing: border-box; /* added to include padding in element's total width */
-  min-width: 0;
+  min-width: 10px;
   margin-right: 5px;
   border-radius: 5px;
 }
