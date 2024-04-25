@@ -17,8 +17,8 @@
 .slide-img {
     width: 80%; /* Adjust width as needed */
     height: auto;
-    max-height: 100%; /* Ensure images don't exceed container height */
-    max-width: 100%; /* Ensure images don't exceed container width */
+    height: 100%; /* Ensure images don't exceed container height */
+    width: 400px; /* Ensure images don't exceed container width */
 }
 
 /* Navigation dots style */
@@ -62,9 +62,19 @@ span{
 .add-appointment-button:hover {
     background-color: #0056b3; /* Button background color on hover */
 }
+.fieldset-container {
+    text-align: center; /* Center align content within fieldset */
+}
+
+.add-appointment-button {
+    display: block; /* Change button to block level */
+    margin: 0 auto; /* Center horizontally */
+}
+
 legend{
     color:red;
     font-family: sans-serif;
+    text-align: center;
 }
 /* Branch search */
 .searchbranch{
@@ -79,4 +89,25 @@ main{
 
 .Äppointmentboder{
     max-width: 50%;
+    float:right;
 }
+/* appointment background colour */
+fieldset{
+    background-color:lightgray;
+    border-width: 5px;
+    border-color:gray;
+}
+/* Map Size */
+.mapimg{
+    width:200px;
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+}
+
+.image-container img {
+    width: 50px; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
