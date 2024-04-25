@@ -5,7 +5,7 @@ fieldset {
     width: 400px;
     margin: 40px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    background-color: #f7ead9
   }
   
   legend {
