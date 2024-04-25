@@ -47,7 +47,30 @@ span{
 .whyus{
     float:right;  
 }
+/* appointment css */
+.add-appointment-button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style on hover */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
 
+.add-appointment-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+legend{
+    color:red;
+    font-family: sans-serif;
+}
+/* Branch search */
+.searchbranch{
+    font-family: serif;
+    font-size: 20px;
 
+}
 
 
