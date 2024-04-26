@@ -85,11 +85,7 @@ span{
     margin: 0 auto; /* Center horizontally */
 }
 
-legend{
-    color:red;
-    font-family: sans-serif;
-    text-align: center;
-}
+
 /* Branch search */
 .searchbranch{
     font-family: serif;
@@ -103,9 +99,20 @@ legend{
 }
 /* appointment background colour */
 fieldset{
-    background-color:lightgray;
+    
     border-width: 5px;
     border-color:gray;
+}
+.whyusContent{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size:40px;
+}
+.Whyusheading{
+    font-size: 30px;
+    color:aqua;
+    font-family: sans-serif;
+    text-align: center;
 }
 /* Map Size */
 .mapimg{
