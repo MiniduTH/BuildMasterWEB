@@ -1,0 +1,78 @@
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f7ead9
+  }
+  
+  legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    font-family:'Segoe UI', sans-serif;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+  }
+  
+  label {
+    display: block;
+    margin:10px auto;
+    font-size: 16px;
+    color: #666;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+  }
+  
+  input[type="text"], input[type="date"], input[type="tel"], input[type="email"], input[type="password"] {
+    width: 90%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="radio"] {
+    margin: 0 10px;
+  }
+
+  input::placeholder , textarea::placeholder {
+    color:#bdc2bd
+  }
+  
+  textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+  button{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto auto 40% ;
+  }
+  
+  button:disabled {
+    background-color: #d4c2c2;
+    cursor: not-allowed;
+  }
+
+  button:disabled:hover {
+    background-color: #cac8c8;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  

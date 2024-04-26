@@ -10,6 +10,7 @@ nav > ul {
   padding: 0;
   overflow: hidden;
   background-color: #414141;
+  min-width: 50%;
 }
 
 nav li a {
@@ -42,7 +43,9 @@ nav input {
   float: right; /* changed from inline-end to right */
   padding: 0 10px; /* added for better spacing */
   box-sizing: border-box; /* added to include padding in element's total width */
-  min-width: none;
+  min-width: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
 }
 
 .logo {
@@ -51,4 +54,8 @@ nav input {
   margin: 0;
   display: inline-block; /* changed from inline to inline-block */
   align-items: center;
+}
+
+hr {
+  min-width: 100%;
 }
