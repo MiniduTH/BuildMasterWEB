@@ -1,0 +1,124 @@
+
+
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex; /* Use flexbox to center images */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+}
+
+/* Hide all slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Style the images */
+.slide-img {
+    width: 80%; /* Adjust width as needed */
+    height: auto;
+    height: 100%; /* Ensure images don't exceed container height */
+    width: 400px; /* Ensure images don't exceed container width */
+}
+
+/* Navigation dots style */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot {
+    background-color: #717171;
+}
+.why{
+    width:20px;
+    height:20px;
+}
+span{
+    color:green;
+    font-size: 25px;
+}
+.whyus{
+    float:right;  
+}
+/* appointment css */
+.add-appointment-button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style on hover */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.add-appointment-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+.fieldset-container {
+    text-align: center; /* Center align content within fieldset */
+}
+
+.add-appointment-button {
+    display: block; /* Change button to block level */
+    margin: 0 auto; /* Center horizontally */
+}
+
+
+/* Branch search */
+.searchbranch{
+    font-family: serif;
+    font-size: 20px;
+
+}
+
+.video{
+    max-width: 50%;
+    float:right;
+}
+/* appointment background colour */
+fieldset{
+    
+    border-width: 5px;
+    border-color:gray;
+}
+.whyusContent{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size:40px;
+}
+.Whyusheading{
+    font-size: 30px;
+    color:aqua;
+    font-family: sans-serif;
+    text-align: center;
+}
+/* Map Size */
+.mapimg{
+    width:200px;
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+}
+
+.image-container img {
+    width: 50px; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+.Äppointmentboder{
+    max-width: 5 0%;
+    float:left;
+}
+
+
+
