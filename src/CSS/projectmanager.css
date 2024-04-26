@@ -31,3 +31,7 @@
 .notices1{
     width:480px;
 }
+.graph1{
+    width:500px; /* Set the width to 300 pixels */
+    height: auto; /* Maintain the aspect ratio */
+}
