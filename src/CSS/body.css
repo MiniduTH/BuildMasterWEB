@@ -21,6 +21,8 @@
     height: auto;
     height: 100%; /* Ensure images don't exceed container height */
     width: 400px; /* Ensure images don't exceed container width */
+    justify-content: center; /* Center images horizontally */
+    align-items: center;
 }
 
 /* Navigation dots style */
