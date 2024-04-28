@@ -1,1 +1,83 @@
 <!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="src/CSS/styles.css">
+    <link rel="stylesheet" href="src/CSS/nav-bar.css">
+    <link rel="stylesheet" href="src/CSS/footer.css">
+    <link rel="stylesheet" href="src/CSS/userAccount.css">
+
+    <script src="src/js/signUp.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="src/img/logo.png">
+        <h1 id="nav-h1">BuildMaster</h1>
+        <button class="login-button">Log Out</button>
+        <hr>
+    </header>
+   
+    <nav class="head-nav">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Our Projects</a></li>
+            <li><a href="index.html">Feedback</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <input type="search" placeholder="search">
+        </ul>
+    </nav>
+    <hr>
+    
+    <main>
+        <form>
+            <fieldset>
+                <legend class="center">User Account</legend>
+                <h1>User Profile</h1>
+                <img src="src/img/logo.png" alt="user logo" width="50" height="50">
+                <input id="uname" type="text" placeholder="User Name" required />
+                <h2>User Details</h2>
+
+                <label>E-mail Adress : </label>
+                <input id="fname" type="text" placeholder="sample@example.com" required /><br>
+
+                <label>Phone Number : </label>
+                <input id="fname" type="text" placeholder="+94 xxx xxx xxx" required /><br>
+
+                <label>User Name : </label>
+                <input id="fname" type="text" placeholder="ex-user" required /><br>
+
+                <label>Password : </label>
+                <input id="fname" type="text" placeholder="*********" required /><br>
+
+                <label>Project Type : </label><br>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                      <a href="#">house</a>
+                      <a href="#">Building</a>
+                      <a href="#">Road</a>
+                    </div>
+                  </div>
+                
+
+
+                <input id="checkBox" type="checkbox" >Accept Terms and conditions <br>
+
+                <button id="sign-btn" disabled>Sign In</button>
+            
+            </fieldset>
+        </form>
+        
+     
+
+      <hr><br><br>
+      <p>Copyright 2024 <span id="footer-right">All rights reserved</span> </p>
+    </footer>
+
+</body>
+<script>
+  document.getElementById('dob').max = new Date().toISOString().split('T')[0];
+  document.getElementById('checkBox').addEventListener('click', enableButton);
+
+</script>
+</html>
