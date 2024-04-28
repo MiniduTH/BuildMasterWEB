@@ -1,23 +1,60 @@
+
 fieldset {
     border: 2px solid #ccc;
     border-radius: 10px;
-    padding: 50px;
-    width: 70px auto;
-    margin: 70px auto;
+    padding: 10px;
+    width:auto ;
+    margin: auto ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f7ead9
+    background-color: #f7ead9;
   }
   
   legend {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-weight: bold;
     color: #333;
     font-family:'Segoe UI', sans-serif;
     text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
   }
+
+  label.choose-file {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height:10%;
+  }
+  /* choose file stylish css */
+  input[type="file"] {
+  display: none;
+  }
+  
+
+  #userlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height:10%;}
+    
+  i.upload{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: center ;
+  }
   
   label {
-    display: block;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
     margin:10px auto;
     font-size: 16px;
     color: #666;
@@ -75,4 +112,7 @@ fieldset {
   button:hover {
     background-color: #3e8e41;
   }
+
+  
+  
   
