@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="src/CSS/styles.css">
+    <link rel="stylesheet" href="src/CSS/nav-bar.css">
+    <link rel="stylesheet" href="src/CSS/footer.css">
+    <link rel="stylesheet" href="src/CSS/logIn.css">
+
+	<title>BuildMaster Login</title>
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="src/img/logo.png">
+        <h1 id="nav-h1">BuildMaster</h1>
+        
+    </header>
+    <nav class="head-nav">
+        <ul>
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="index.html">Our Projects</a></li>
+            <li><a href="index.html">Feedback</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <input type="search" placeholder="search">
+        </ul>
+    </nav>
+    <hr>
+	<div class="login-form">
+		<h2>BuildMaster Login</h2>
+		<form action="/check-login" method="post">
+			<input type="text" name="username" placeholder="Username" required>
+			<input type="password" name="password" placeholder="Password" required>
+			<input type="submit" value="Login">
+            <br><hr>
+            <p class="center">Don't have an account ?</p>
+        </form>
+        <a href="signUp.html"><button class="login-Only-button">Sign Up</button></a>
+		
+	</div>
+</body>
+</html>
