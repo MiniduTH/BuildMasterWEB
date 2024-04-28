@@ -1,6 +1,3 @@
-
-
-
 .slideshow-container {
     max-width: 100%;
     position: relative;
@@ -27,7 +24,7 @@
 
 /* Navigation dots style */
 .dot {
-    cursor: pointer;
+    cursor:initial;
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -95,7 +92,7 @@ fieldset{
 }
 .whyusContent{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
+    color:rgb(50, 69, 129);
     font-size:40px;
 }
 .Whyusheading{
