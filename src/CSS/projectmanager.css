@@ -1,13 +1,15 @@
-.name{
-
-        border: 2px solid #FF0000; /* Red border with 2px thickness */
-        color: #000000; /* Black color for the text */
-        padding: 5px; /* Optional: Add padding to create space around the word */
-       width: 350px;
-       background-color:lightgoldenrodyellow;
+.name {
+    border: 2px solid #23395d;
+    padding: 5px;
+    width: 350px;
+    background-color: #A9A9A9;
+    margin: 0 auto; /* Add margin: 0 auto; to horizontally center the element */
 }
+
 .content{
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font: small-caps bold 15px/1 sans-serif;
 }
 /* Notification bar */
 /* Hide the message by default */
@@ -22,20 +24,29 @@
     border: 1px solid #ccc;
     z-index: 999;
   }
-.notices2{
-    font-size: 30px;
+  .container {
+    position: relative;
 }
-.noticecontent{
-    font-family: font-family: font-family: cursive;
+
+.left-content {
+    /* Your styles for the left content */
 }
-.notices1{
-    width:480px;
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.graph1{
-    width:500px; /* Set the width to 300 pixels */
-    height: auto; /* Maintain the aspect ratio */
+
+.parallel-image {
+    max-width: 100%; /* Ensure the image does not exceed its container */
 }
+
+
 .calander1{
-    width:400px; /* Set the width to 300 pixels */
-    height: auto; /* Maintain the aspect ratio */
+    width: 350px;
+ 
+}
+body{
+    background-color: #DCDCDC;
 }
