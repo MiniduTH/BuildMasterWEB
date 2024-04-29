@@ -31,7 +31,16 @@
 		<form action="/check-login" method="post">
 			<input type="text" name="username" placeholder="Username" required>
 			<input type="password" name="password" placeholder="Password" required>
-			<input type="submit" value="Login">
+			<div class="acc-type">
+                <p>Accont type :</p>
+                <label for="client">Client</label>
+                <input type="radio"id="client" value="C" name="accType" checked>
+                <label for="staff">Staff</label>
+                
+                <input type="radio"id="staff" value="S" name="accType">
+                </div>
+                <input type="submit" value="Login">
+            
             <br><hr>
             <p class="center">Don't have an account ?</p>
         </form>
