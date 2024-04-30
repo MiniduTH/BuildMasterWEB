@@ -5,3 +5,13 @@ function enableButton(){
     else document.getElementById("sign-btn").disabled = true;
 }
 enableButton();
+
+function checkPassword(){
+    if (document.getElementById('pwd').value != document.getElementById('cpwd').value){
+        alert("Password Mismatched!")
+        return false
+    }else {
+        alert("Sucess")
+        return true
+    }
+};

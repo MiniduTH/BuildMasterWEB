@@ -27,31 +27,31 @@
     <hr>
     
     <main>
-        <form>
+        <form onsubmit="return checkPassword ()" action="signUpSubmit.php" method="post">
             <fieldset>
                 <legend class="center">Sign Up</legend>
                 <label>Name : </label>
-                <input id="fname" type="text" placeholder="First Name" required />
-                <input id="lname" type="text" placeholder="Last Name" required /><br>
+                <input id="fname" type="text" placeholder="First Name" name="fname" required />
+                <input id="lname" type="text" placeholder="Last Name" name="lname" /><br>
 
                 <label>Date of Birth : </label>
-                <input id="dob" type="date" required /><br>
+                <input id="dob" type="date" name="dob" required /><br>
 
                 <label for="gender">Gender : </label>
-                <input type="radio" id="male" name="gender"/>Male
-                <input type="radio" id="female" name="gender" required/>Female<br>
+                <input type="radio" id="male" name="gender" value="M" required/>Male
+                <input type="radio" id="female" name="gender" value="F"/>Female<br>
 
-                <label for="pnumber" >Mobile No. : </label>
-                <input id="pnumber" type="tel" required placeholder="07x xxx xxxx" /><br>
+                <label for="tel" >Mobile No. : </label>
+                <input id="tel" type="tel" name="tel" required placeholder="07x xxx xxxx" /><br>
 
                 <label for="addr">Address : </label> <br>
-                <textarea id="addr"required placeholder="Enter your Address" cols="50" rows="4"></textarea><br>
+                <textarea id="addr"required placeholder="Enter your Address" cols="50" rows="4" name="addr"></textarea><br>
 
                 <label for="email">Email Address: </label>
-                <input id="email" type="email" required placeholder="sample@example.com" /><br>
+                <input id="email" type="email" required name="email" placeholder="sample@example.com" /><br>
 
                 <label for="pwd">Enter a Password : </label>
-                <input id="pwd" type="password" required placeholder="***********" /><br>
+                <input id="pwd" type="password" name="pwd" required placeholder="***********" /><br>
 
                 <label>Confirm Password : </label>
                 <input id="cpwd" type="password" required placeholder="***********" /><br>
@@ -77,8 +77,8 @@
 
 </body>
 <script>
-  document.getElementById('dob').max = new Date().toISOString().split('T')[0];
-  document.getElementById('checkBox').addEventListener('click', enableButton);
+    document.getElementById('dob').max = new Date().toISOString().split('T')[0];
+    document.getElementById('checkBox').addEventListener('click', enableButton);
 
 </script>
 </html>
