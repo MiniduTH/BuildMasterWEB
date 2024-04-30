@@ -13,12 +13,12 @@ table,th,td  {
     height: 60px;
     padding: 0;
     margin: 0;
-    display: inline-block; /* changed from inline to inline-block */
+    display: inline-block; /*changed from inline to inline-block*/
     align-items: center;
   }
 th{
     font-family:serif;
-    font-size: 20px; 
+    font-size: 20px;
 }
 td{
     font-family: cursive;
