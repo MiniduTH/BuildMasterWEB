@@ -11,7 +11,6 @@ function checkPassword(){
         alert("Password Mismatched!")
         return false
     }else {
-        alert("Sucess")
         return true
     }
 };
