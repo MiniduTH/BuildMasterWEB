@@ -31,14 +31,15 @@
         <form>
             <fieldset>
                 <legend class="center">User Profile</legend>
-
-                <img id="userlogo" src="src/img/userlogo.png" alt="user logo" width="50" height="50"><br>
-
-                <label class="choose-file" for="file-input">
-                    <i class="upload"></i> Choose File
-                </label>
-                <input type="file" id="file-input">
-                <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+                 <div class="logo-container">
+                <h2>Current Logo</h2>
+                <div class="current-logo"></div>
+            </div>
+                <div class="upload-section">
+                <input type="file" id="logo-upload" class="upload-input" accept="image/*">
+                <label for="logo-upload" class="upload-label">Choose a New Logo (Image Only)</label>
+             </div>
+             <button>Update Logo</button>
 
                 <br><label>Change Username : </label><br>
                 <input id="uname" type="text" placeholder="New User Name" required />
