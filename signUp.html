@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="src/CSS/styles.css">
+    <link rel="stylesheet" href="src/CSS/nav-bar.css">
+    <link rel="stylesheet" href="src/CSS/footer.css">
+    <link rel="stylesheet" href="src/CSS/signUp.css">
+
+    <script src="src/js/signUp.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="src/img/logo.png">
+        <h1 id="nav-h1">BuildMaster</h1>
+        <hr>
+    </header>
+   
+    <nav class="head-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Our Projects</a></li>
+            <li><a href="index.html">Feedback</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <input type="search" placeholder="search">
+        </ul>
+    </nav>
+    <hr>
+    
+    <main>
+        <form>
+            <fieldset>
+                <legend class="center">Sign Up</legend>
+                <label>Name : </label>
+                <input id="fname" type="text" placeholder="First Name" required />
+                <input id="lname" type="text" placeholder="Last Name" required /><br>
+
+                <label>Date of Birth : </label>
+                <input id="dob" type="date" required /><br>
+
+                <label for="gender">Gender : </label>
+                <input type="radio" id="male" name="gender"/>Male
+                <input type="radio" id="female" name="gender" required/>Female<br>
+
+                <label for="pnumber" >Mobile No. : </label>
+                <input id="pnumber" type="tel" required placeholder="07x xxx xxxx" /><br>
+
+                <label for="addr">Address : </label> <br>
+                <textarea id="addr"required placeholder="Enter your Address" cols="50" rows="4"></textarea><br>
+
+                <label for="email">Email Address: </label>
+                <input id="email" type="email" required placeholder="sample@example.com" /><br>
+
+                <label for="pwd">Enter a Password : </label>
+                <input id="pwd" type="password" required placeholder="***********" /><br>
+
+                <label>Confirm Password : </label>
+                <input id="cpwd" type="password" required placeholder="***********" /><br>
+
+                <input id="checkBox" type="checkbox" >Accept Terms and conditions <br>
+
+                <button id="sign-btn" disabled>Sign Up</button>
+            
+            
+        </form>
+        
+        </fieldset>
+        <p class="center">Already have an account?</p>
+            <a href="logIn.html"><button class="signUp-Only-button">Log In</button></a>
+        
+        
+        
+     
+
+     <div class="footer">
+      <p>&copy; 2024 BuildMaster IT. All rights reserved.</p></div>
+
+
+</body>
+<script>
+  document.getElementById('dob').max = new Date().toISOString().split('T')[0];
+  document.getElementById('checkBox').addEventListener('click', enableButton);
+
+</script>
+</html>

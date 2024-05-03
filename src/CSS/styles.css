@@ -10,9 +10,14 @@
   text-decoration: none;
   border-style: none;
   border-radius: 5px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .login-button:hover {
   background-color: #FFA07A;
+}
+
+body{
+  background-color: beige;
 }

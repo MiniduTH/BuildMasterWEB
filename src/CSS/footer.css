@@ -12,33 +12,32 @@ footer p{
 
   
 #outer {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
     background-color: #ffde73;
-    overflow:inherit;
     height: max-content;
   }
   
-  #col1, #col2, #col3 {
-    width: 33.33%;
-    float: left;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+
   
   #col1 {
+    grid-column-start: 1;
+    width:auto  ;
     background-color: #d9d9d9;
   }
   
   #col2 {
+    grid-column-start: 2;
     background-color: #e6e6e6;
   }
   
-  
   #col3 {
+    grid-column-start: 3;
     background-color: #d9d9d9;
   } 
   footer h3 {
     margin-top: 0;
+    text-align: center;
   }
   
   footer ul {
@@ -48,6 +47,7 @@ footer p{
   
   footer li {
     margin-bottom: 10px;
+    padding: 3px 10px;
   }
   
   footer a {
@@ -68,4 +68,11 @@ footer p{
     display: inline;
     width: 30px;
     padding:20px 10px;
+  }
+
+  .footer{
+    background-color: #333;
+			color: #fff;
+			padding: 1rem;
+			text-align: center;
   }
