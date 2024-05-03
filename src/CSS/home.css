@@ -1,0 +1,87 @@
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-image: url("../img/hero-bg.jpg"); /* Add background image to hero section */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cover {
+    background-color: #0000003f;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Add transition to hover effect */
+}
+
+.container_hero .btn{
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.452);
+}
+
+.btn:hover {
+    background-color: #494848;
+}
+
+/* Social Media Icons Section */
+.social-media {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+    display: inline;
+}
+
+.social-icons li a {
+    display: inline;
+}
+
+.social-icons li img {
+    width: 40px; /* Increase icon size */
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition to hover effect */
+}
+
+.social-icons li img:hover {
+    transform: scale(1.2);
+}
+
+section.social-media {
+    background-color: rgba(43, 43, 41, 0.548);
+}
+

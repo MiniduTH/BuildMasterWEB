@@ -4,8 +4,8 @@ fieldset {
     padding: 20px;
     width: 400px;
     margin: 40px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f7ead9
+    box-shadow: 10px 10px 10px rgba(175, 98, 98, 0.1);
+    background-color: #ece1cf;
   }
   
   legend {
@@ -13,7 +13,7 @@ fieldset {
     font-weight: bold;
     color: #333;
     font-family:'Segoe UI', sans-serif;
-    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
   }
   
   label {
@@ -21,7 +21,7 @@ fieldset {
     margin:10px auto;
     font-size: 16px;
     color: #666;
-    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
   }
   
   input[type="text"], input[type="date"], input[type="tel"], input[type="email"], input[type="password"] {
@@ -76,3 +76,25 @@ fieldset {
     background-color: #3e8e41;
   }
   
+  .signUp-Only-button{
+    padding: 10px 20px;
+  background-color: #FF7F50;
+  color: #fff;
+  text-decoration: none;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.signUp-Only-button:hover{
+    background-color: rgb(170, 113, 92);
+   
+}
+
+a{
+  text-decoration: none;
+}

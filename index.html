@@ -1,173 +1,62 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="src/CSS/styles.css">
-    <link rel="stylesheet" href="src/CSS/nav-bar.css">
-    <link rel="stylesheet" href="src/CSS/footer.css">
-    <link rel="stylesheet" href="src/CSS/body.css">
-
-   
-        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Management System</title>
+    <link rel="stylesheet" href="src/CSS/home.css">
+    <link rel="stylesheet" href="src/CSS/style.css">
 </head>
 <body>
-    
-    <header>
-        <img class="logo" src="src/img/logo.png">
-        <h1 id="nav-h1">BuildMaster</h1>
-        <button class="login-button">Log In / Sign Up</button>
-        <hr>
-    </header>
-    <nav class="head-nav">
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="index.html">Our Projects</a></li>
-            <li><a href="index.html">Feedback</a></li>
-            <li><a href="contactUs.html">Contact Us</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <input type="search" placeholder="search">
-        </ul>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="header_left">
+                <h1 class="logo">BuildMaster</h1>
+                <ul class="nav-links">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Our Projects</a></li>
+                    <li><a href="index.html">Feedback</a></li>
+                    <li><a href="src/contactUs.html">Contact Us</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="login-signup">
+                <a href="src/login.html"><button class="btn">Login</button></a>
+                <button  class="btn"><a>Signup</a></button>
+            </div>
+        </div>
     </nav>
-    <hr>
-    
-    <main>
-      
-        
-            <div class="mySlides">
-                <img class="slide-img" src="src/img/photo1.jpg" width="20px">
+
+    <!-- Hero Section -->
+    <div class="cover">
+        <section class="hero">
+            <div class="container_hero">
+                <h2>Welcome to BuildMaster</h2>
+                <p>Efficiently manage your construction projects from start to finish.</p>
+                <a href="src/login.html" class="btn">Get Started</a>
             </div>
-            <div class="mySlides">
-                <img class="slide-img" src="src/img/photo2.jpg" width="20px">
-            </div>
-            <div class="mySlides">
-                <img class="slide-img" src="src/img/photo3.jpg" width="20px">
-            </div>
-            
-            <!-- Add more slides with different images as needed -->
-
-        </div>
-      
-        
-         <!-- Navigation dots -->
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        
-        </div>
-        
-        
-
-        <!--Adding why us part-->
-    <div class="whyus">
-        <fieldset class="Whyus1">
-            <legend class="Whyusheading"><b>Why US?</b></legend>
-          
-      
-        <img class="why" src="src/img/tik.png" alt="Tick Icon">
-        <span class="whyusContent">Best Quality</span><br><br>
-
-        <img class="why" src="src/img/tik.png" alt="Tick Icon">
-        <span class="whyusContent">Reasonable Price</span><br><br>
-        
-        
-
-        <img class="why" src="src/img/tik.png" alt="Tick Icon">
-        <span class="whyusContent">Fast producton</span><br><br>
-
-        <img class="why" src="src/img/tik.png" alt="Tick Icon">
-        <span class="whyusContent">Installment available</span><br>
-
-    </fieldset>
+        </section>
     </div>
-    <!--Appoinment-->
-    <fieldset class="Äppointmentboder">
-        <legend><b>Set an appointment</b></legend>
-        <button class="add-appointment-button">Add Appointment</button>
 
-    </fieldset>
-    <!-- Search Branch -->
-    <div class="Map">
-            <label class = "searchbranch" for="searchType">Search Our Branch</label>
-    <select id="searchType">
-        <option value="name">Colombo</option>
-        <option value="email">Kandy</option>
-        <option value="email">Matara</option>
-        <option value="email">Jaffna</option>
-        
-    </select><br>
-    
-    <img class="Mapimg" src="src/img/map.png">
-    </div>
-    <fieldset class="video">
-        <legend><b>Click here to watch our projects</b></legend>
-        <div class="image-container">
-            <img src="src/img/utube.png" alt="Your Image">
-        </div><br>
-        <button class="add-appointment-button">Click Here</button>
+    <!-- Social Media Icons Section -->
+    <section class="social-media">
+        <div class="social-media_container">
+            <h3 class="heading">Follow us on</h3>
+            <ul class="social-icons">
+                <li><a href="#"><img src="src/img/ig.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="src/img/fb.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="src/img/yt.png" alt="YouTube"></a></li>
+                <li><a href="#"><img src="src/img/twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+    </section>
 
-    </fieldset>
-    
-    
-        
-        <h2 class="center">Construction </h2>
-    </main>
-    <!-- This div is represent backgroundimage -->
-</div>
-
+    <!-- Footer -->
     <footer>
-      <hr>
-      <div id="outer">
-          <div id="col1">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html">Our Projects</a></li>
-              <li><a href="index.html">Feedback</a></li>
-              <li><a href="index.html">About Us</a></li>
-            </ul>
-          </div>
-          <div id="col2">
-            <h3 class="center">Follow Us On </h3>
-            <img src="src/img/logo.png" width="40px">
-            <div class="follow center">
-              <img src="src/img/fb.png">
-              <img src="src/img/ig.png">
-            </div>
-          </div>
-          <div id="col3">
-            <h3>Contact Us</h3>
-            <ul>
-              <li><b>Phone: </b><a href="tel:+9471234567">555-555-5555</a></a></li>
-              <li><b>Email: </b><a href="mailto:info@buildmaster.com">info@buildmaster.com</a></a></li>
-              <li><b>Address:</b> 123 Main St, Colombo , LK</a></li>
-            </ul>
-          </div>
+        <div class="footer-container">
+            <p>&copy; 2024 Construction Management System. All Rights Reserved.</p>
         </div>
-      <hr><br><br>
-      <p>Copyright 2024 <span id="footer-right">All rights reserved</span> </p>
     </footer>
-
-    <script>
-        // JavaScript for slideshow
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active-dot", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active-dot";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-
 </body>
 </html>
