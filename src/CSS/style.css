@@ -66,6 +66,10 @@ nav:hover {
 .login-signup button {
     margin-left: 10px; /* Adds some spacing between buttons */
 }
+.login-signup a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .btn {
     display: inline-block;

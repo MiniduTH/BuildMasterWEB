@@ -10,10 +10,13 @@
 }
 
 .login-form {
+    width:300px;
     background-color: rgba(255, 255, 255, 0.192);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin: 50px auto;
+    border: 1px dotted #ddd;
 }
 
 .login-form h2 {
@@ -46,7 +49,7 @@
 }
 .login-form input[type="email"]::placeholder,
 .login-form input[type="password"]::placeholder {
-    color: #ffffffa6;
+    color: #ffffff71;
 }
 
 .account-type {
@@ -72,11 +75,15 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: block; 
+    margin: 0 auto;
+    font-weight: bolder ;
 }
 
 .login-form button:hover {
     background-color: #ffffff;
 }
+
 
 .register-link {
     text-align: center;
@@ -88,7 +95,6 @@
     color: #e4b943;
     text-decoration: none;
     transition: color 0.3s ease;
-    text-shadow: 0 0 5px #f5f5f5;
 }
 
 .register-link a:hover {
