@@ -1,0 +1,108 @@
+
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width:auto ;
+    margin: auto ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f7ead9;
+  }
+  
+  legend {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #333;
+    font-family:'Segoe UI', sans-serif;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+  }
+
+  h2{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    margin:10px auto;
+    font-size: 16px;
+    color: #141414;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+  }
+
+  
+  button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  label {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    margin:10px auto;
+    font-size: 16px;
+    color: #141414;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+  }
+  
+  input[type="text"], input[type="date"], input[type="tel"], input[type="email"], input[type="password"] {
+    width: 90%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  input::placeholder , textarea::placeholder {
+    color:#bdc2bd
+  }
+  
+  textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+  button{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto auto 40% ;
+  }
+  
+  button:disabled {
+    background-color: #d4c2c2;
+    cursor: not-allowed;
+  }
+
+  button:disabled:hover {
+    background-color: #cac8c8;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+
+  
+  
+  
