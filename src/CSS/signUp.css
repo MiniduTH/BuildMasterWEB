@@ -95,7 +95,7 @@ input::placeholder, textarea::placeholder{
 }
 
 .signUp-Only-button {
-  background-color: #4CAF50; /* Green */
+  background-color: #af874c; /* Green */
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -104,14 +104,17 @@ input::placeholder, textarea::placeholder{
 }
 
 .signUp-Only-button:hover {
-  background-color: #3e8e41; /* Darker green on hover */
+  background-color: #8e693e; /* Darker green on hover */
 }
 
 .signUp-Only-button:active {
-  background-color: #3e8e41; /* Darker green on click */
+  background-color: #8e723e; /* Darker green on click */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .center-container {
   text-align: center;
   margin-bottom: 10px;
+}
+.center{
+  text-shadow:0 0 20px white;
 }
