@@ -1,108 +1,160 @@
 
-fieldset {
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    width:auto ;
-    margin: auto ;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f7ead9;
-  }
-  
-  legend {
-    font-size: 2.0rem;
-    font-weight: bold;
-    color: #333;
-    font-family:'Segoe UI', sans-serif;
-    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
-  }
+body {
+  background-color: #222020;
+} 
 
-  h2{
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    display: inline-block;
-    margin:10px auto;
-    font-size: 16px;
-    color: #141414;
-    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
-  }
+/* styles.css */
+header {
+  background-image: url('https://elearningindustry.com/wp-content/uploads/2022/02/Is-Project-Management-Software-Worth-The-Investment.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px; 
+  text-align: center; 
+  padding: 20px; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://elearningindustry.com/wp-content/uploads/2022/02/Is-Project-Management-Software-Worth-The-Investment.jpg');
+}
 
-  
-  button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 1rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  
-  label {
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    display: inline-block;
-    margin:10px auto;
-    font-size: 16px;
-    color: #141414;
-    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
-  }
-  
-  input[type="text"], input[type="date"], input[type="tel"], input[type="email"], input[type="password"] {
-    width: 90%;
-    height: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
+.header1 {
+  font-size: 70px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 150px;
+  color: #ffffff;
+}
 
-  input::placeholder , textarea::placeholder {
-    color:#bdc2bd
+p {
+  font-size: 18px;
+}
+
+
+h1{
+  font-family:'Poppins', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(189, 189, 177);
+}
+
+.wrapper {
+  float: left;
+  margin-right: 10px;
+}
+
+.typing-demo {
+  padding-left: 160px;
+  width: 73ch;
+  animation: typing 5s steps(400), blink .10s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+@keyframes typing {
+  from {
+    width: 0
   }
-  
-  textarea {
-    width: 90%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    resize: vertical;
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
+}
+.para{
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(99, 95, 95);
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #2c2929;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.contact-info {
+  flex-basis: 45%;
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info h2 span {
+  color: #ff6b6b;
+}
+
+.contact-form {
+  flex-basis: 50%;
+  margin-top: 100px;
+  margin-right: 200px;
+  margin-left: 200px;
+  align-content: center;
   
-  button{
-    background-color: #4CAF50;
+}
+
+.contact-details div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contact-details i {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  margin-right: 1rem;
+  font-family: 'FontAwesome';
+}
+
+.contact-details i.fa-map-marker-alt {
+  content: '\f041';
+}
+
+.contact-details i.fa-envelope {
+  content: '\f0e0';
+}
+
+.contact-details i.fa-phone {
+  content: '\f095';
+}
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #555;
+    background-color: #1a1a1a;
     color: #fff;
-    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+form button.btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 1rem 2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-weight: bold;
     cursor: pointer;
-    margin: 10px auto auto 40% ;
-  }
-  
-  button:disabled {
-    background-color: #d4c2c2;
-    cursor: not-allowed;
-  }
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
 
-  button:disabled:hover {
-    background-color: #cac8c8;
-    cursor: not-allowed;
-  }
-  
-  button:hover {
-    background-color: #3e8e41;
-  }
-
-  
-  
-  
+form button.btn:hover {
+    background-color: #ff4d4d;
+}

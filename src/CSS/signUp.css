@@ -1,100 +1,120 @@
-fieldset {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    width: 400px;
-    margin: 40px auto;
-    box-shadow: 10px 10px 10px rgba(175, 98, 98, 0.1);
-    background-color: #ece1cf;
-  }
+.glass-form {
+  background-color: rgba(44, 44, 44, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  margin: 20px auto;
   
-  legend {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    font-family:'Segoe UI', sans-serif;
-    text-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  label {
-    display: block;
-    margin:10px auto;
-    font-size: 16px;
-    color: #666;
-    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
-  }
-  
-  input[type="text"], input[type="date"], input[type="tel"], input[type="email"], input[type="password"] {
-    width: 90%;
-    height: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  input[type="radio"] {
-    margin: 0 10px;
-  }
+}
 
-  input::placeholder , textarea::placeholder {
-    color:#bdc2bd
-  }
-  
-  textarea {
-    width: 90%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    resize: vertical;
-  }
-  
-  button{
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px auto auto 40% ;
-  }
-  
-  button:disabled {
-    background-color: #d4c2c2;
-    cursor: not-allowed;
-  }
+input::placeholder, textarea::placeholder{
+  color : rgba(211, 209, 209, 0.671)
+}
 
-  button:disabled:hover {
-    background-color: #cac8c8;
-    cursor: not-allowed;
-  }
-  
-  button:hover {
-    background-color: #3e8e41;
-  }
-  
-  .signUp-Only-button{
-    padding: 10px 20px;
-  background-color: #FF7F50;
+.form-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-legend {
   color: #fff;
-  text-decoration: none;
-  border-style: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.form-input,
+.form-textarea,
+.form-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
   border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4pxrgba(0, 0, 0, 0.1);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-button:focus {
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form-textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  display: block;
-  margin: 0 auto;
+}
+
+.form-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-button:disabled {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+}
+
+.form-checkbox + a{
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: navajowhite;
+}
+
+.form-checkbox:checked + a {
+  color: #fff;
+  text-decoration: underline;
+}
+.center {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: auto auto 10px auto ;
+}
+
+.signUp-Only-button {
+  background-color: #af874c; /* Green */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signUp-Only-button:hover {
+  background-color: #8e693e; /* Darker green on hover */
+}
+
+.signUp-Only-button:active {
+  background-color: #8e723e; /* Darker green on click */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.center-container {
+  text-align: center;
   margin-bottom: 10px;
 }
-
-.signUp-Only-button:hover{
-    background-color: rgb(170, 113, 92);
-   
-}
-
-a{
-  text-decoration: none;
+.center{
+  text-shadow:0 0 20px white;
 }
