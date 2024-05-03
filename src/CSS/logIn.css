@@ -1,57 +1,97 @@
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.479);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+}
 
 .login-form {
-    width: 300px;
-    background-color: #ece1cf;
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
     padding: 20px;
-    margin: 50px auto;
-    border: 1px solid #ddd;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
+
 .login-form h2 {
-    
+    color: #e4dbca;
     text-align: center;
     margin-bottom: 20px;
 }
-.login-form input[type="email"], .login-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-}
-.login-form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
+
+.login-form label {
+    display: block;
     color: #fff;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
     border: none;
-    cursor: pointer;
     border-radius: 5px;
-}
-.login-form input[type="submit"]:hover {
-    background-color: #45a049;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
-.login-Only-button{
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+.login-form input[type="email"]::placeholder,
+.login-form input[type="password"]::placeholder {
+    color: #ffffffa6;
+}
+
+.account-type {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.account-type input[type="radio"] {
+    margin-right: 5px;
+}
+
+.account-type label {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.login-form button {
+    background-color: #f7f7f7;
+    color: #333;
     padding: 10px 20px;
-  background-color: #FF7F50;
-  color: #fff;
-  text-decoration: none;
-  border-style: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: block;
-  margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.login-Only-button:hover{
-    background-color: rgb(170, 113, 92);
+.login-form button:hover {
+    background-color: #ffffff;
 }
-a{
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.register-link a {
+    color: #e4b943;
     text-decoration: none;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 5px #f5f5f5;
 }
 
-.acc-type label{
-    margin-left: 50px;
+.register-link a:hover {
+    color: #d9ff00;
+    text-shadow: 0 0 10px rgb(158, 96, 3);
 }
