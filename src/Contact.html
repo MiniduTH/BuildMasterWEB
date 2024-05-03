@@ -4,24 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BuildMaster - Contact Us</title>
-        <link rel="stylesheet" href="CSS/contact.css"
+        <link rel="stylesheet" href="CSS/contact.css">
+        <link rel="stylesheet" href="CSS/style.css">
     </head>
 <body>  
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#"><img src="logo.png" alt="BuildMaster Logo"></a>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="header_left">
+                <h1 class="logo">BuildMaster</h1>
+                <ul class="nav-links">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Our Projects</a></li>
+                    <li><a href="index.html">Feedback</a></li>
+                    <li><a href="src/contactUs.html">Contact Us</a></li>
+                    <li><a href="../index.html">About Us</a></li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+            <div class="login-signup">
+                <a href="login.html"><button class="btn">Login</button></a>
+                <button  class="btn"><a>Signup</a></button>
+            </div>
+        </div>
+    </nav>
     <main>
         <section class="contact-section">
             <div class="contact-info">
@@ -52,9 +57,24 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; BuildMaster</p>
-    </footer>
+        <!-- Social Media Icons Section -->
+        <section class="social-media">
+            <div class="social-media_container">
+                <h3 class="heading">Follow us on</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="img/ig.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/fb.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/yt.png" alt="YouTube"></a></li>
+                    <li><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2024 Construction Management System. All Rights Reserved.</p>
+            </div>
+        </footer>
 </body>
 </html>
