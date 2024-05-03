@@ -1,0 +1,93 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family:  sans-serif, Arial;
+    background-image: url("../img/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    height: min-content;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #3a3a3aef;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Add transition to hover effect */
+}
+
+nav:hover {
+    background-color: #444;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    text-align: center;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 16px;
+    transition: text-shadow 0.3s ease; /* Add transition to hover effect */
+}
+
+.nav-links li a:hover {
+    text-shadow: 0px 0px 25px white;
+}
+
+.logo {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 20px; /* Add margin to logo */
+}
+
+.login-signup button {
+    margin-left: 10px; /* Adds some spacing between buttons */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Add transition to hover effect */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
