@@ -57,6 +57,8 @@ session_start();
             </div>
         </div>
     </nav>
+    
+    <h2 id="hello"> Hello <?php echo $_SESSION['Name'] . "," ?> </h2>
 
     <!-- Project Status Component -->
     <div class="project-status">
