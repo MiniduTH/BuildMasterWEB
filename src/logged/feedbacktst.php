@@ -52,8 +52,7 @@
         <table id="feedbackTable">
             <thead>
               <tr>
-                <th>Email</th>
-                <th>Name</th>
+                <th>ID</th>
                 <th>Visibility</th>
                 <th>Feedback</th>
                 <th>Actions</th>
