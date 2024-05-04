@@ -55,9 +55,11 @@ $conn->close();
             color: #0066cc;
         }
     </style>
+    
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <div class="message"><?php echo $message; ?></div>
-    <a href="index.php"><p>Go back to home</p></a>
+    <a href="feedbacktst.php"><p>Go back</p></a>
 </body>
 </html>

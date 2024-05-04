@@ -49,16 +49,17 @@
             </ul>
         </section>
 
-        <table id="feedbackTable">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Visibility</th>
-                <th>Feedback</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
+        <div class="container1">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Visibility</th>
+        <th>Feedback</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
                 <?php
                 include "../config.php";
 

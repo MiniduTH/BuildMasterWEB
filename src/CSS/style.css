@@ -11,7 +11,9 @@ body {
     background-image: url("../img/bg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
+
 
 div.container {
     width: 100%;
@@ -84,18 +86,19 @@ nav:hover {
 
 /* Footer */
 footer {
-    position: fixed;
-    bottom: 0;
+    bottom: 0; 
     width: 100%;
     background-color: #333;
     padding: 20px 0;
     text-align: center;
     color: #fff;
+    position: relative;
 }
 
 
 footer p {
     font-size: 18px;
     margin-bottom: 10px;
+    flex-shrink: 0;
 }
 
