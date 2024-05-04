@@ -1,3 +1,15 @@
+<?php
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+
+include "config.php";
+session_start();
+
+if ($_SESSION['status'] == 1){
+    header('location:src/logged/index.php');
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +26,7 @@
             <div class="header_left">
                 <h1 class="logo">BuildMaster</h1>
                 <ul class="nav-links">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="../index.php">Home</a></li>
                     <li><a href="index.html">Our Projects</a></li>
                     <li><a href="index.html">Feedback</a></li>
                     <li><a href="src/contactUs.html">Contact Us</a></li>
