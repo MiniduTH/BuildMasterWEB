@@ -26,7 +26,7 @@ if ($_SESSION['status'] == 1){
             <div class="header_left">
                 <h1 class="logo">BuildMaster</h1>
                 <ul class="nav-links">
-                    <li class="active"><a href="../index.php">Home</a></li>
+                    <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="index.php">Our Projects</a></li>
                     <li><a href="index.php">Feedback</a></li>
                     <li><a href="src/contact.html">Contact Us</a></li>
