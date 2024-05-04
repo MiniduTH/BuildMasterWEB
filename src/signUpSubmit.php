@@ -61,6 +61,6 @@ $conn->close();
 <body>
     <div class="message"><?php echo $message; ?></div>
     <a href="logIn.html"><p>Log In</p></a>
-    <a href="../index.html"><p>Go back to home</p></a>
+    <a href="../index.php"><p>Go back to home</p></a>
 </body>
 </html>
