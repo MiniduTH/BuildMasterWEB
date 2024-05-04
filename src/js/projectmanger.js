@@ -109,3 +109,15 @@ function deleteSelected() {
     displayTextList();
 }
 // End of JavaScript for Text Uploader
+ 
+//chart
+document.addEventListener('DOMContentLoaded', function() {
+  const bars = document.querySelectorAll('.bar');
+
+  bars.forEach(bar => {
+      const progress = bar.getAttribute('data-progress');
+      bar.style.setProperty('--progress', `${progress}%`);
+  });
+});
+
+//End ofchart
