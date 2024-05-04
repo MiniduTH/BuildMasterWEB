@@ -1,37 +1,58 @@
 /* Keep existing styles for .name, .content, .message, .container, .left-content, .image-container, .parallel-image, .calander1, and body */
 
 /* New styles for rearranging content */
+.background{
+    background-image: url(../img/background123.jpg);
+}
 .head {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+
+}
+.content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
 }
 
 .notification {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.graph1{
-    width:600px;
-    height : 600px;
-    margin-top:-0%px;
-}
-.notices{
-    width:500px;
+    position: relative;
+    margin-left: 86%;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
     padding: 20px;
-  }
-  
-  .chart {
-    width: 100%;
-    min-height: 300px;
-    margin-bottom: 20px;
-  }
-  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.notification img {
+    cursor: pointer;
+}
+
+/* Adjust the notification icon size */
+.notification img {
+    width: 40px;
+    height: 40px;
+    
+}
+
