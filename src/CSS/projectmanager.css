@@ -23,11 +23,15 @@
     width:500px;
 }
 
-
-.chart {
-    width: 100%; 
-    min-height: 450px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
   }
-  .row {
-    margin:0 !important;
+  
+  .chart {
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 20px;
   }
+  
