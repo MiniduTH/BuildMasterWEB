@@ -16,6 +16,7 @@ if ($accType == 'C') {
 if ($result->num_rows > 0) {
     $row = $result->fetch_array();
     $_SESSION['Name'] = $row['first_name'];
+    $_SESSION['email'] = $row['email'];
     $msg = "<div class='message'>Logged in successfully</div><a href='logOut.php'><p>Log Out</p></a>";
     $_SESSION['status'] = 1;
 } else {

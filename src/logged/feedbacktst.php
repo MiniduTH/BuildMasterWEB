@@ -33,7 +33,7 @@
         <!-- Feedback Form -->
         <section class="feedback-form">
             <h2>Leave Your Feedback</h2>
-            <form action="form.php" method="post">
+            <form action="feedbackpost.php" method="post">
                 <label for="feedback">Feedback:</label>
                 <textarea id="feedback" name="feedback"></textarea>
                 <label for="visibility">Visibility:</label>
@@ -48,6 +48,48 @@
                 <!-- Feedback items will be rendered here -->
             </ul>
         </section>
+
+        <table id="feedbackTable">
+            <thead>
+              <tr>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Visibility</th>
+                <th>Feedback</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+                <?php
+                include "../config.php";
+
+                session_start();
+
+                $email = $_SESSION['email'];
+                $result = mysqli_query($conn, "SELECT * FROM feedback WHERE email='$email' ");
+              
+                while ($row = mysqli_fetch_assoc($result)) {
+                  echo "<tr>";
+                  echo "<td>" . $row["id"] . "</td>";  
+                  echo "<td>" . $row["visibility"] . "</td>";
+                  echo "<td>" . $row["feedback"] . "</td>";
+                  echo '<td>
+                    
+                    <form action="editfeedback.php" method="post">
+                    <input type="hidden" name="id" value="' . $row["id"] . '">
+                    <button type="submit">Edit</button></form>
+                     <form action="deletefeedback.php" method="post">
+                        <input type="hidden" name="id" value="' . $row["id"] . '">
+                        <button type="submit">Delete</button>
+                    </form>                               </td>';
+                  echo "</tr>";
+                }
+              
+                mysqli_close($conn);
+                ?>
+                </tbody>
+              </table>
+
     </main>
     <footer>
         <div class="footer-container">
