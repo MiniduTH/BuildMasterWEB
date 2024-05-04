@@ -5,6 +5,7 @@ body {
     background-image: url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
+    
 }
 
 * {
@@ -68,17 +69,6 @@ header {
     font-family: 'FontAwesome';
 }
 
-.contact-details i.fa-map-marker-alt {
-    content: '\f041';
-}
-
-.contact-details i.fa-envelope {
-    content: '\f0e0';
-}
-
-.contact-details i.fa-phone {
-    content: '\f095';
-}
 
 form input,
 form textarea {
