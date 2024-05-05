@@ -30,7 +30,7 @@ if ($_SESSION['status'] == 1){
                     <li><a href="index.php">Our Projects</a></li>
                     <li><a href="index.php">Feedback</a></li>
                     <li><a href="src/contact.html">Contact Us</a></li>
-                    <li><a href="index.php">About Us</a></li>
+                    <li><a href="src/aboutus.html">About Us</a></li>
                 </ul>
             </div>
             <div class="login-signup">
