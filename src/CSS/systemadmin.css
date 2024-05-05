@@ -46,38 +46,6 @@ body {
     margin-bottom: 20px;
   }
   
-  .header-stats {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .stat-box {
-    background-color: #4d4d4d;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 50px;
-    width: 250px;
-  }
-  
-  .red {
-    background-color: #4d4d4d;
-  }
-  
-  .dark {
-    background-color: #4d4d4d;
-  }
-  
-  .green {
-    background-color: #4d4d4d;
-  }
-  
-  .yellow {
-    background-color: #4d4d4d;
-  }
-  
   main {
     display: flex;
     flex-grow: 1;
@@ -86,7 +54,7 @@ body {
   .sidebar {
     background-color: #fff;
     padding: 20px;
-    width: 260px;
+    width: 150px;
   }
   
   .content {
@@ -109,25 +77,6 @@ body {
     padding: 2px 10px;
     font-weight: bold;
   }
-  
-  .ticket-overview,
-  .event-tickets,
-  .top-solvers {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 100px;
-    width: 200px;
-  }
-  
-  .event-ticket-count {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff6b6b;
-  }
 
   input[type="text"] {
     width: 80%;
@@ -148,22 +97,10 @@ button {
     cursor: pointer;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    border-bottom: 1px solid #ccc;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
 /* Styling for the form container */
 .notice-form {
   width: 480px;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-top: 20px;
   padding: 30px;
   border-radius: 10px;
@@ -247,4 +184,12 @@ input[type="submit"] {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.backup-section {
+  padding: 80px; /* Add some padding */
+  text-align: center; /* Center the text */
+  background: #1abc9c; /* Green background */
+  color: white; /* White text color */
+  height: 340px;
 }
