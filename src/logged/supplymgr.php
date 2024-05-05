@@ -20,7 +20,7 @@
                         <li><a href="ourproject.html">Our Projects</a></li>
                         <li><a href="index.php">Feedback</a></li>
                         <li><a href="../contact.html">Contact Us</a></li>
-                        <li><a href="index.php">About Us</a></li>
+                        <li><a href="../aboutus.html">About Us</a></li>
                     </ul>
                 </div>
                 <div class="login-signup">
@@ -70,12 +70,4 @@
                 ?>
             </tbody>
         </table>
-    </div>                 
-
-    <footer>
-        <div class="footer-container">
-            <p>&copy;2024 BuildMaster IT. All Rights Reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+    </div>      

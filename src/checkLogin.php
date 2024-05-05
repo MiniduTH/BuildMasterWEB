@@ -18,6 +18,7 @@ if ($accType == 'C') {
         $_SESSION['email'] = $row['email'];
         $msg = "<div class='message'>Logged in successfully</div><a href='logOut.php'><p>Log Out</p></a>";
         $_SESSION['status'] = 1;
+        $_SESSION['role'] = 'client';
     } else {
         $msg = "<div class='message'>Login failed. Please try again.</div><a href='login.html'><p>Try again</p></a>";
     } 
