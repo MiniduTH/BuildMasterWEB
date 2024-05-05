@@ -1,6 +1,7 @@
 /* CSS for Notification and Popup */
 body {
-    background-image: url(../img/background123.jpg);
+    background-image: url(../img/bg.jpeg);
+ 
 }
 .notification {
     position: relative;
@@ -11,6 +12,13 @@ body {
     margin-right: auto;
     position: relative; /* Ensure proper positioning */
     left: 6%;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    color: #333333;
+}
+.content{
+    font-family: Arial, sans-serif;
+    color: #000000;
+    font-size: 15px;
 }
 .head {
     text-align: center;
@@ -55,16 +63,21 @@ h3{
 /* End of Notification and Popup CSS */
 
 /* CSS for Text Uploader Section */
-.container {
-    background-color: #f0f0f0;
+.container1 {
+    background-color: rgba(128, 128, 128, 0.6);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 500px;
-    margin: 20px auto 20px 20px;
+    width: 500px; /* Fixed width */
+    margin: 20px auto;
     padding: 30px;
     border: 2px solid #007bff;
-    float:left;
+
+      /* Adjusting the left and right margins */
+  margin-left: 20px; /* Change this value as needed */
+  margin-right: 20px; /* Change this value as needed */
+  
+  /* Changing the position */
+  position: relative; /* Change this value as needed (e.g., absolute, fixed, etc.) */
 }
 
 .h1 {
@@ -73,23 +86,28 @@ h3{
     color: #007bff;
 }
 
-.input {
+.upload-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
-    width: 100%;
+}
+
+.input {
+    width: calc(50% - 10px); /* Adjusted width for two files with spacing */
+    height: 40px; /* Fixed height */
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 5px;
 }
 
 .button {
     padding: 15px 30px;
-    background-color: #ffa500;
+    background-color: rgba(255, 99, 71, 0.7);
     color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-bottom: 40px;
-    display: block;
 }
 
 .button:hover {
@@ -97,10 +115,14 @@ h3{
 }
 
 .text-item {
+    display: inline-block;
     background-color: #fff;
     padding: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
+
 
 /* Chart */
 .chart-container {
@@ -110,7 +132,7 @@ h3{
 
 .chart {
 
-    background-color: #f0f0f0;
+    background-color: rgba(128, 128, 128, 0.6);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 80%;
@@ -125,9 +147,18 @@ h3{
     gap: 8px;
     border: 1px solid #ccc; /* Added border */
     padding: 27px; /* Added padding for better appearance */
-    background-color: #f0f0f0; /* Add a background color */
-}
 
+    margin-top: -335px;
+    margin-left:620px; /* Change this value as needed */
+    margin-right: 20px; /* Change this value as needed */
+    
+    /* Changing the position */
+    position: relative;
+ 
+}
+h3{
+    font-size: 30px;
+}
 
 .bar {
     background-color: #007bff;
@@ -152,3 +183,75 @@ h3{
 
 
 /* End of chart */
+
+/* Calander CSS */
+.calendar {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select,
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+
+/* End of calander */
+
+/* Notice CSS */
+.notice-board {
+    max-width: 500px;
+    margin: 50px auto; /* Adjusted margin for center alignment */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    float: left; /* Float to the left */
+}
+.add-notice {
+    margin-top: 20px;
+}
+textarea {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+    height: 100px;
+    margin-bottom: 10px;
+}
+button {
+    display: block;
+    margin-top: 10px;
+}
+  
+/* End of NOtice CSS */
