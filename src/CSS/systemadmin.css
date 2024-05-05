@@ -93,6 +93,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    padding-bottom: 70px;
     flex-grow: 1;
   }
   
@@ -142,4 +143,60 @@ li {
     padding: 10px;
     display: flex;
     justify-content: space-between;
+}
+
+/* Styling for the form container */
+.notice-form {
+  width: 500px;
+  padding-top: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for input fields */
+.notice-form input[type="subject"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the submit button */
+.notice-form input[type="submit"] {
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.notice-form input[type="submit"]:hover {
+  background-color: #8b008b; /* Darker shade on hover */
+}
+
+.person{
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.submitbutton{
+  padding-top: 40px;
+}
+
+.noticearea{
+  padding-right: 20px;
 }

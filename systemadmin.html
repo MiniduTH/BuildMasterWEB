@@ -25,7 +25,7 @@
     <main>
       <div class="sidebar">
         <div class="filter-section">
-          <h3>Asign The Tasks</h3>
+          <h3>Daily Tasks</h3>
           <div class="containertodo">
             <input type="text" id="task" placeholder="Enter a task">
             <button id="add">Add Task</button>
@@ -61,6 +61,28 @@
         <div class="event-tickets">
           <h3>Every Hour Tickets</h3>
           <div class="event-ticket-count">1547</div>
+        </div>
+        <div class="notice-form">
+        <h2>Publish Notice</h2>
+        <div class="noticearea">
+          <form action="/submit" method="post">
+          <input type="subject" name="Subject" placeholder="Subject">
+          <textarea class="textarea" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+            <div class="person">
+            <input type="checkbox" name="Project Manager" value="Project Manager">
+            <label for="Project Manager">Project Manager</label><br>
+            <input type="checkbox" name="Supply Manager" value="Supply Manager">
+            <label for="Supply Manager">Supply Manager</label><br>
+            <input type="checkbox" name="Accountant" value="Accountant">
+            <label for="Accountant">Accountant</label><br>
+            <input type="checkbox" name="Client" value="Client">
+            <label for="Accountant">Client</label><br>
+            </div>
+            <div class="submitbutton">
+              <input type="submit" value="Publish">
+            </div>
+        </form>
         </div>
       </div>
     </main>
