@@ -29,18 +29,17 @@
             </div>
         </nav>
     </header>
-    
+    <div class="table-container">
     <table>
         <thead>
           <tr>
             <th>Item No.</th>
             <th>Name</th>
             <th>Description</th>
+            <th>Minimum Stock Level</th>
             <th>Remaining Amount</th>
-            <th>Action</th>
           </tr>
         </thead>
-        <tbody>
             <tbody>
                 <?php
                 include "../config.php";
@@ -53,28 +52,25 @@
               
               
                 while ($row = mysqli_fetch_assoc($result)) {
-                  echo "<tr>";
+                 if($row["remaining_amount"]<=$row["min_stock_level"]){
+                    echo "<tr class='warn'>";
+                 }   
+                 else{echo "<tr>";}
+                  
                   echo "<td>" . $row["item_no"] . "</td>";  
                   echo "<td>" . $row["name"] . "</td>";
                   echo "<td>" . $row["description"] . "</td>";
+                  echo "<td>" . $row["min_stock_level"] . "</td>";
                   echo "<td>" . $row["remaining_amount"] . "</td>";
-                  echo '<td>
-                    
-                    <form action="editfeedback.php" method="post">
-                    <input type="hidden" name="id" value="'. $row["id"] . '">
-                    <button type="submit">Edit</button></form>
-                     <form action="deletefeedback.php" method="post">
-                        <input type="hidden" name="id" value="' . $row["id"] . '">
-                        <button type="submit">Delete</button>
-                    </form>                               </td>';
+                  
                   echo "</tr>";
                 }
               
                 mysqli_close($conn);
                 ?>
-                </tbody>
-              </table>
-
+            </tbody>
+        </table>
+    </div>                 
 
     <footer>
         <div class="footer-container">
