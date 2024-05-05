@@ -58,11 +58,52 @@ main {
     color: #ffa500;
 }
 
-/* Footer styles */
-footer {
-    background-color: #111;
-    color: #ddd;
-    padding: 20px;
+/* Social Media Icons Section */
+.social-media {
+    background-color: #333;
+    padding: 20px 0;
     text-align: center;
 }
 
+.social-media h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+    display: inline;
+}
+
+.social-icons li a {
+    display: inline;
+}
+
+.social-icons li img {
+    width: 40px; /* Increase icon size */
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition to hover effect */
+}
+
+.social-icons li img:hover {
+    transform: scale(1.2);
+}
+
+section.social-media {
+    background-color: rgba(43, 43, 41, 0.548);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;}
