@@ -1,24 +1,22 @@
-/* Keep existing styles for .name, .content, .message, .container, .left-content, .image-container, .parallel-image, .calander1, and body */
-
-/* New styles for rearranging content */
-.background{
+/* CSS for Notification and Popup */
+body {
     background-image: url(../img/background123.jpg);
 }
-.head {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-
-}
-.content{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: center;
-}
-
 .notification {
     position: relative;
-    margin-left: 86%;
+    
+}
+.name {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Ensure proper positioning */
+    left: 6%;
+}
+.head {
+    text-align: center;
+}
+h3{
+    text-align: center;
 }
 
 .popup {
@@ -46,13 +44,111 @@
 }
 
 .notification img {
+    width: 45px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
     cursor: pointer;
+    float:right;
+    cursor: pointer;
+    float:right;
 }
 
-/* Adjust the notification icon size */
-.notification img {
-    width: 40px;
-    height: 40px;
+/* End of Notification and Popup CSS */
+
+/* CSS for Text Uploader Section */
+.container {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto 20px 20px;
+    padding: 30px;
+    border: 2px solid #007bff;
+    float:left;
+}
+
+.h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.button:hover {
+    background-color: #ff7f00;
+}
+
+.text-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Chart */
+.chart-container {
+    max-width: 1300px;
+    margin: 70px auto 20px; /* Added space at the bottom */
+}
+
+.chart {
+
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 10px auto 20px 20px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    float:left;
     
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #ccc; /* Added border */
+    padding: 27px; /* Added padding for better appearance */
+    background-color: #f0f0f0; /* Add a background color */
 }
 
+
+.bar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bar::before {
+    content: attr(data-progress) "%";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--progress); /* Use --progress variable */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+
+
+/* End of chart */
