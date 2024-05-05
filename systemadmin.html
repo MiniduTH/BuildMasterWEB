@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="src/CSS/systemadmin.css">
+  <link rel="stylesheet" href="src/CSS/systemadmin.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-info">
+        <div class="customers">WELCOME SYSTEM ADMINISTER</div>
+      </div>
+      <div class="header-stats">
+        <div class="stat-box">24. 13. <span>Avg. Wait Time</span></div>
+        <div class="stat-box">20. 29. <span>Avg. First Reply Time</span></div>
+        <div class="stat-box red">1. 58. <span>Avg. Handle Time</span></div>
+        <div class="stat-box dark">1.6 <span>Replies / Ticket</span></div>
+        <div class="stat-box green">45 <span>Total Rating</span></div>
+        <div class="stat-box yellow">28 <span>Awesome Rating</span></div>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar">
+        <div class="filter-section">
+          <h3>Daily Tasks</h3>
+          <div class="containertodo">
+            <input type="text" id="task" placeholder="Enter a task">
+            <button id="add">Add Task</button>
+            <ul id="task-list"></ul>
+        </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="event-tickets">
+          <h3>Every Hour Tickets</h3>
+          <div class="event-ticket-count">1547</div>
+        </div>
+        <div class="event-tickets">
+          <h3>Every Hour Tickets</h3>
+          <div class="event-ticket-count">1547</div>
+        </div>
+        <div class="event-tickets">
+          <h3>Every Hour Tickets</h3>
+          <div class="event-ticket-count">1547</div>
+        </div>
+        <div class="event-tickets">
+          <h3>Every Hour Tickets</h3>
+          <div class="event-ticket-count">1547</div>
+        </div>
+        <div class="event-tickets">
+          <h3>Every Hour Tickets</h3>
+          <div class="event-ticket-count">1547</div>
+        </div>
+        <div class="event-tickets">
+          <h3>Every Hour Tickets</h3>
+          <div class="event-ticket-count">1547</div>
+        </div>
+        <div class="event-tickets">
+          <h3>Every Hour Tickets</h3>
+          <div class="event-ticket-count">1547</div>
+        </div>
+        <div class="notice-form">
+          <h1>Resource Allocation</h1>
+        <div class="simple-bar-chart">
+          
+          <div class="item" style="--clr: #5EB344; --val: 50">
+            <div class="label">Wood</div>
+            <div class="value">50%</div>
+          </div>
+          
+          <div class="item" style="--clr: #FCB72A; --val: 98">
+            <div class="label">Cement</div>
+            <div class="value">98%</div>
+          </div>
+          
+          <div class="item" style="--clr: #F8821A; --val: 67">
+            <div class="label">Metals</div>
+            <div class="value">67%</div>
+          </div>
+          
+          <div class="item" style="--clr: #E0393E; --val: 46">
+            <div class="label">Bricks</div>
+            <div class="value">46%</div>
+          </div>
+          
+          <div class="item" style="--clr: #963D97; --val: 89">
+            <div class="label">Concrete</div>
+            <div class="value">89%</div>
+          </div>
+          
+          <div class="item" style="--clr: #069CDB; --val: 56">
+            <div class="label">Clay</div>
+            <div class="value">56%</div>
+          </div>
+        </div>
+
+        </div>
+        <div class="notice-form">
+          <h1>Project Progress</h1>
+          <div class="simple-bar-chart">
+          
+            <div class="item" style="--clr: #5EB344; --val: 50">
+              <div class="label">Wood</div>
+              <div class="value">50%</div>
+            </div>
+            
+            <div class="item" style="--clr: #FCB72A; --val: 98">
+              <div class="label">Cement</div>
+              <div class="value">98%</div>
+            </div>
+            
+            <div class="item" style="--clr: #F8821A; --val: 67">
+              <div class="label">Metals</div>
+              <div class="value">67%</div>
+            </div>
+            
+            <div class="item" style="--clr: #E0393E; --val: 46">
+              <div class="label">Bricks</div>
+              <div class="value">46%</div>
+            </div>
+            
+            <div class="item" style="--clr: #963D97; --val: 89">
+              <div class="label">Concrete</div>
+              <div class="value">89%</div>
+            </div>
+            
+            <div class="item" style="--clr: #069CDB; --val: 56">
+              <div class="label">Clay</div>
+              <div class="value">56%</div>
+            </div>
+          </div>
+          </div>
+          <div class="notice-form">
+            <h2>Publish Notice</h2>
+            <div class="noticearea">
+              <form action="/submit" method="post">
+              <input type="subject" name="Subject" placeholder="Subject">
+              <textarea class="textarea" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+                <div class="person">
+                <input type="checkbox" name="Project Manager" value="Project Manager">
+                <label for="Project Manager">Project Manager</label><br>
+                <input type="checkbox" name="Supply Manager" value="Supply Manager">
+                <label for="Supply Manager">Supply Manager</label><br>
+                <input type="checkbox" name="Accountant" value="Accountant">
+                <label for="Accountant">Accountant</label><br>
+                <input type="checkbox" name="Client" value="Client">
+                <label for="Accountant">Client</label><br>
+                </div>
+                <div class="submitbutton">
+                  <input type="submit" value="Publish">
+                </div>
+            </form>
+            </div>
+      </div>
+    </main>
+  </div>
+  <script src="src/js/systemadmin.js"></script>
+</body>
+</html>
