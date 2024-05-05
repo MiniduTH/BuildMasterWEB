@@ -17,9 +17,9 @@
                 <h1 class="logo">BuildMaster</h1>
                 <ul class="nav-links">
                     <li class="active"><a href="../index.php">Home</a></li>
-                    <li><a href="ourproject.html">Our Projects</a></li>
+                    <li><a href="ourproject.php">Our Projects</a></li>
                     <li><a href="index.php">Feedback</a></li>
-                    <li><a href="src/contact.html">Contact Us</a></li>
+                    <li><a href="src/contact.php">Contact Us</a></li>
                     <li><a href="index.php">About Us</a></li>
                 </ul>
             </div>
@@ -58,7 +58,7 @@
                 <label class="form-label">Confirm Password : </label>
                 <input class="form-input" id="cpwd" type="password" required placeholder="***********" />
         
-                <input class="form-checkbox" id="checkBox" type="checkbox" >Accept <a href="terms.html">Terms and conditions</a> <br>
+                <input class="form-checkbox" id="checkBox" type="checkbox" >Accept <a href="terms.php">Terms and conditions</a> <br>
         
                 <button class="form-button" id="sign-btn" disabled>Sign Up</button>
             
@@ -68,7 +68,7 @@
         </fieldset>
         <div class="center-container">
             <p class="center">Already have an account?</p>
-            <a href="logIn.html"><button class="signUp-Only-button">Log In</button></a>
+            <a href="logIn.php"><button class="signUp-Only-button">Log In</button></a>
           </div>
            <footer>
                 <div class="footer-container">

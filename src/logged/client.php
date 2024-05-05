@@ -37,9 +37,9 @@ session_start();
                 <h1 class="logo">BuildMaster</h1>
                 <ul class="nav-links">
                     <li class="active"><a href="../../index.php">Dashboard</a></li>
-                    <li><a href="../ourproject.html">Our Projects</a></li>
+                    <li><a href="../ourproject.php">Our Projects</a></li>
                     <li><a href="feedbacktst.php">Feedback</a></li>
-                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="../contact.php">Contact Us</a></li>
                     <li><a href="../../index.php">About Us</a></li>
                 </ul>
             </div>
