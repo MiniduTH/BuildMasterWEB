@@ -1,22 +1,20 @@
 <?php
-include "config.php";
+include "../config.php";
+session_start();
 
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$dob = $_POST['dob'];
-$gender = $_POST['gender'];
-$tel = $_POST['tel'];
-$addr = $_POST['addr'];
-$email = $_POST['email'];
-$pwd = $_POST['pwd'];
+$feedback = $_POST['feedback'];
+$visibility = $_POST['visibility'];
+$email = $_SESSION['email'];
+$name = $_SESSION['Name'];
 
-$sql = "INSERT INTO user (first_name,last_name,dob,gender,tel,address,email,password) VALUES ( '$fname', '$lname', '$dob', '$gender', $tel, '$addr', '$email', '$pwd')";
+
+$sql = "INSERT INTO feedback (email,name,visibility,feedback) VALUES ( '$email', '$name', '$visibility', '$feedback')";
 
 
 if ($conn-> query($sql)) {
-    $message = "Account created successfully!";
+    $message = "Feedback sent successfully";
 } else {
-    $message = "Fail to create an acc: ". $stmt->error;
+    $message = "Error : Try Again: ". $stmt->error;
 }
 
 $conn->close();
@@ -26,7 +24,6 @@ $conn->close();
 
 <html>
 <head>
-    <link rel="stylesheet" href="CSS/style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,10 +55,11 @@ $conn->close();
             color: #0066cc;
         }
     </style>
+    
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <div class="message"><?php echo $message; ?></div>
-    <a href="logIn.html"><p>Log In</p></a>
-    <a href="../index.php"><p>Go back to home</p></a>
+    <a href="feedbacktst.php"><p>Go back</p></a>
 </body>
 </html>

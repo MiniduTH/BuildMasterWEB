@@ -1,24 +1,154 @@
-/* Keep existing styles for .name, .content, .message, .container, .left-content, .image-container, .parallel-image, .calander1, and body */
-
-/* New styles for rearranging content */
+/* CSS for Notification and Popup */
+body {
+    background-image: url(../img/background123.jpg);
+}
+.notification {
+    position: relative;
+    
+}
+.name {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Ensure proper positioning */
+    left: 6%;
+}
 .head {
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.notification img {
+    width: 45px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+    float:right;
+    cursor: pointer;
+    float:right;
+}
+
+/* End of Notification and Popup CSS */
+
+/* CSS for Text Uploader Section */
+.container {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto 20px 20px;
+    padding: 30px;
+    border: 2px solid #007bff;
+    float:left;
+}
+
+.h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.button:hover {
+    background-color: #ff7f00;
+}
+
+.text-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Chart */
+.chart-container {
+    max-width: 1300px;
+    margin: 70px auto 20px; /* Added space at the bottom */
+}
+
+.chart {
+
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 10px auto 20px 20px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    float:left;
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+    gap: 8px;
+    border: 1px solid #ccc; /* Added border */
+    padding: 27px; /* Added padding for better appearance */
+    background-color: #f0f0f0; /* Add a background color */
 }
 
-.notification {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+
+.bar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
 }
-.graph1{
-    width:600px;
-    height : 600px;
-    margin-top:-0%px;
+
+.bar::before {
+    content: attr(data-progress) "%";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--progress); /* Use --progress variable */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    transition: width 0.5s ease;
 }
-.notices{
-    width:500px;
-}
+
+
+
+/* End of chart */

@@ -1,0 +1,113 @@
+/* style.css */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.feedback-form {
+    background-color: #00000056;
+    padding: 20px;
+    border: 1px none #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 2px , 0.1);
+    height: max-content;
+    width: 70%;
+    margin: 0 auto; /* add this line */
+    text-align: center; /* add this line */
+    
+}
+
+.feedback-form h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.feedback-form select {
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.feedback-form button[type="submit"] {
+    background-color: #af954c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.feedback-form button[type="submit"]:hover {
+    background-color: #8e693e;
+}
+
+.feedback-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feedback-list li {
+    padding: 10px;
+    background-color: #f1f1f100;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: max-content;
+}
+
+
+  .container1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /* add this line */
+    text-align: center; /* add this line */
+  }
+  table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+td{
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+
+.warn, .warn td{
+    background-color:rgba(255, 158, 158, 0.959);
+
+}
