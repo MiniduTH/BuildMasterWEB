@@ -4,6 +4,19 @@ body {
 }
 .notification {
     position: relative;
+    
+}
+.name {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Ensure proper positioning */
+    left: 6%;
+}
+.head {
+    text-align: center;
+}
+h3{
+    text-align: center;
 }
 
 .popup {
@@ -31,12 +44,12 @@ body {
 }
 
 .notification img {
+    width: 45px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
     cursor: pointer;
-}
-
-.notification img {
-    width: 30px;
-    height: 30px;
+    float:right;
+    cursor: pointer;
+    float:right;
 }
 
 /* End of Notification and Popup CSS */
@@ -96,13 +109,25 @@ body {
 }
 
 .chart {
+
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 10px auto 20px 20px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    float:left;
+    
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     border: 1px solid #ccc; /* Added border */
-    padding: 15px; /* Added padding for better appearance */
+    padding: 27px; /* Added padding for better appearance */
     background-color: #f0f0f0; /* Add a background color */
 }
+
 
 .bar {
     background-color: #007bff;

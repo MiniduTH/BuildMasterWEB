@@ -1,17 +1,19 @@
 // JavaScript for the Notification Bell Icon Popup
+// JavaScript code
 document.addEventListener('DOMContentLoaded', function() {
-    const notificationIcon = document.getElementById('notificationIcon');
-    const popup = document.getElementById('popup');
-    const closePopup = document.getElementById('closePopup');
+  const notificationIcon = document.getElementById('notificationIcon');
+  const popup = document.getElementById('popup');
+  const closePopup = document.getElementById('closePopup');
 
-    notificationIcon.addEventListener('click', function() {
-        popup.style.display = 'block';
-    });
+  notificationIcon.addEventListener('click', function() {
+      popup.style.display = 'block';
+  });
 
-    closePopup.addEventListener('click', function() {
-        popup.style.display = 'none';
-    });
+  closePopup.addEventListener('click', function() {
+      popup.style.display = 'none';
+  });
 });
+
 
 // JavaScript for Text Uploader
 let uploadedTexts = [];
