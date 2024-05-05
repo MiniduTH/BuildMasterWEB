@@ -135,6 +135,6 @@ footer {
 @media (max-width: 768px) {
     .form-left,
     .form-right {
-        width: 100%;
+    width: 100%;
     }
 }
