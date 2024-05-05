@@ -65,9 +65,11 @@
     <!-- Text Uploader Section -->
     <div class="container">
         <h1>See Project Details Here</h1>
-        <input type="file" id="file-input" multiple>
-        <button onclick="uploadText()" class="button">Upload</button>
-        <div id="text-list"></div>
+        <div class="upload-section">
+            <input type="file" id="file-input" multiple>
+            <button onclick="uploadText()" class="button">Upload</button>
+        </div>
+        <div id="text-list" class="text-list"></div>
         <button onclick="downloadSelected()" class="button download-button">Download Selected</button>
         <button onclick="deleteSelected()" class="button delete-button">Delete Selected</button>
     </div>
@@ -88,7 +90,27 @@
 
 <!-- Calander -->
 
+
+    <div class="calendar">
+      <input type="date" id="date-input">
+      <textarea id="text-input" placeholder="Enter your text here"></textarea>
+      <button onclick="saveText()">Save</button>
+
+    </div>
 <!-- End of calander -->
+
+<!-- Notice -->
+<div class="notice-board">
+    <h2>Notices</h2>
+    <ul id="notices-list">
+      <!-- Notices will be added dynamically here -->
+    </ul>
+    <div class="add-notice">
+      <textarea id="new-notice" placeholder="Type your notice here"></textarea>
+      <button onclick="addNotice()">Add Notice</button>
+    </div>
+  </div>
+<!-- End of Notice -->
 
 <hr>
   <footer>

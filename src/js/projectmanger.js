@@ -125,6 +125,36 @@ document.addEventListener('DOMContentLoaded', function() {
 //End ofchart
 
 //Calander
-
+function saveText() {
+    var dateInput = document.getElementById("date-input").value;
+    var textInput = document.getElementById("text-input").value;
+  
+    // Check if both date and text are provided
+    if (dateInput && textInput) {
+      // Store date and text in localStorage
+      localStorage.setItem(dateInput, textInput);
+      alert("Text saved for " + dateInput);
+    } else {
+      alert("Please select a date and enter some text before saving.");
+    }
+  }
+  
 
 //End of calander
+
+//Notice JS
+function addNotice() {
+    var noticeText = document.getElementById("new-notice").value.trim();
+    if (noticeText !== "") {
+      var ul = document.getElementById("notices-list");
+      var li = document.createElement("li");
+      li.textContent = noticeText;
+      ul.appendChild(li);
+      document.getElementById("new-notice").value = ""; // Clear textarea after adding notice
+    } else {
+      alert("Please enter a notice!");
+    }
+  }
+  
+  
+//End of Notice JS
