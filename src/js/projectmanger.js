@@ -126,20 +126,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //Calander
 function saveText() {
-    var dateInput = document.getElementById("date-input").value;
-    var textInput = document.getElementById("text-input").value;
-  
-    // Check if both date and text are provided
-    if (dateInput && textInput) {
-      // Store date and text in localStorage
-      localStorage.setItem(dateInput, textInput);
-      alert("Text saved for " + dateInput);
+    var day = document.getElementById("day").value;
+    var month = document.getElementById("month").value;
+    var year = document.getElementById("year").value;
+    var text = document.getElementById("text-input").value;
+    
+    if (day && month && year && text) {
+      var key = year + "-" + month + "-" + day;
+      localStorage.setItem(key, text);
+      alert("Text saved for " + key);
     } else {
       alert("Please select a date and enter some text before saving.");
     }
   }
   
-
 //End of calander
 
 //Notice JS

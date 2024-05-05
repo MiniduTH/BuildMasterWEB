@@ -186,13 +186,49 @@ h3{
 
 /* Calander CSS */
 .calendar {
-    max-width: 300px;
-    margin: 50px 20px 50px 50px; /* Adjusted margin for space between the calendar and notice board */
-    padding: 10px;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    float: right; /* Float to the left */
-}
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select,
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+
 /* End of calander */
 
 /* Notice CSS */

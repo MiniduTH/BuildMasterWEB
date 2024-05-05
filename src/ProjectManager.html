@@ -89,15 +89,34 @@
 <!-- End of Chart -->
 
 <!-- Calander -->
-
-
-    <div class="calendar">
-      <input type="date" id="date-input">
-      <textarea id="text-input" placeholder="Enter your text here"></textarea>
-      <button onclick="saveText()">Save</button>
-
-    </div>
-<!-- End of calander -->
+<div class="calendar">
+    <label for="day">Select Day:</label>
+    <select id="day">
+      <!-- Options for days -->
+      <!-- You can generate these dynamically using JavaScript if needed -->
+      <!-- For simplicity, let's assume 1 to 31 days -->
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <!-- Add options for all days -->
+      <option value="31">31</option>
+    </select>
+    
+    <label for="month">Select Month:</label>
+    <select id="month">
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <!-- Add options for all months -->
+      <option value="12">December</option>
+    </select>
+    
+    <label for="year">Select Year:</label>
+    <input type="number" id="year" min="1900" max="2100" value="2022">
+    
+    <textarea id="text-input" placeholder="Enter your text here"></textarea>
+    <button onclick="saveText()">Save</button>
+  </div>
+  
+  <!-- End of calander -->
 
 <!-- Notice -->
 <div class="notice-board">
