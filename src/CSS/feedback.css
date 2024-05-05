@@ -2,29 +2,30 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-size: cover;
-    background-position: center;
 }
 
 .feedback-form {
-    background-color: #f7f7f7;
+    background-color: #00000056;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px none #ddd;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 2px , 0.1);
     height: max-content;
     width: 70%;
     margin: 0 auto; /* add this line */
     text-align: center; /* add this line */
+    
 }
 
 .feedback-form h2 {
     margin-top: 0;
+    color: white;
 }
 
 .feedback-form label {
     display: block;
     margin-bottom: 10px;
+    color: white;
 }
 
 .feedback-form textarea {
@@ -72,5 +73,32 @@ html, body {
 }
 
 
+  .container1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /* add this line */
+    text-align: center; /* add this line */
+  }
+
+  table {
+    width: 60%;
+    background-color: #f2f2f2c0;
+    border-collapse: collapse;
+    margin: 20px auto; /* add this line */ 
+    text-align: center; /* add this line */
+    border-radius: 3px;
+  }
+
+  th,
+  td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px groove #020202;
+
+  }
+
+  th{
+    background-color: #f1f1f1af;
+  }
 
 

@@ -26,6 +26,7 @@ $conn->close();
 
 <html>
 <head>
+    <link rel="stylesheet" href="CSS/style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
