@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+
+  .customers{
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .filter-section{
+    height: 700px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: #4d4d4d;
+    font-weight: bold;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 5opx;
+  }
+
+  .containertodo{
+    width:0 auto;
+  }
+  
+  header {
+    background-color: #212027;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .header-stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat-box {
+    background-color: #4d4d4d;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 50px;
+  }
+  
+  .red {
+    background-color: #4d4d4d;
+  }
+  
+  .dark {
+    background-color: #4d4d4d;
+  }
+  
+  .green {
+    background-color: #4d4d4d;
+  }
+  
+  .yellow {
+    background-color: #4d4d4d;
+  }
+  
+  main {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .sidebar {
+    background-color: #fff;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .ticket-overview,
+  .event-tickets,
+  .top-solvers {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100px;
+  }
+  
+  .event-ticket-count {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b6b;
+  }
+
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
