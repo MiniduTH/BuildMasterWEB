@@ -11,7 +11,7 @@
   <div class="container">
     <header>
       <div class="header-info">
-        <div class="customers">WELCOME SYSTEM ADMINISTER</div>
+        <div class="customers">WELCOME SYSTEM ADMINISTRATOR</div>
       </div>
       <div class="header-stats">
         <div class="stat-box">24. 13. <span>Avg. Wait Time</span></div>
@@ -35,110 +35,63 @@
       </div>
       <div class="content">
         <div class="event-tickets">
-          <h3>Every Hour Tickets</h3>
+          <h2>Project 01</h2>
           <div class="event-ticket-count">1547</div>
         </div>
         <div class="event-tickets">
-          <h3>Every Hour Tickets</h3>
+          <h2>Project 02</h2>
           <div class="event-ticket-count">1547</div>
         </div>
         <div class="event-tickets">
-          <h3>Every Hour Tickets</h3>
+          <h2>Project 03</h2>
           <div class="event-ticket-count">1547</div>
         </div>
         <div class="event-tickets">
-          <h3>Every Hour Tickets</h3>
+          <h2>Project 04</h2>
           <div class="event-ticket-count">1547</div>
         </div>
         <div class="event-tickets">
-          <h3>Every Hour Tickets</h3>
+          <h2>Project 05</h2>
           <div class="event-ticket-count">1547</div>
         </div>
         <div class="event-tickets">
-          <h3>Every Hour Tickets</h3>
-          <div class="event-ticket-count">1547</div>
-        </div>
-        <div class="event-tickets">
-          <h3>Every Hour Tickets</h3>
+          <h2>Project 06</h2>
           <div class="event-ticket-count">1547</div>
         </div>
         <div class="notice-form">
-          <h1>Resource Allocation</h1>
-        <div class="simple-bar-chart">
-          
-          <div class="item" style="--clr: #5EB344; --val: 50">
-            <div class="label">Wood</div>
-            <div class="value">50%</div>
-          </div>
-          
-          <div class="item" style="--clr: #FCB72A; --val: 98">
-            <div class="label">Cement</div>
-            <div class="value">98%</div>
-          </div>
-          
-          <div class="item" style="--clr: #F8821A; --val: 67">
-            <div class="label">Metals</div>
-            <div class="value">67%</div>
-          </div>
-          
-          <div class="item" style="--clr: #E0393E; --val: 46">
-            <div class="label">Bricks</div>
-            <div class="value">46%</div>
-          </div>
-          
-          <div class="item" style="--clr: #963D97; --val: 89">
-            <div class="label">Concrete</div>
-            <div class="value">89%</div>
-          </div>
-          
-          <div class="item" style="--clr: #069CDB; --val: 56">
-            <div class="label">Clay</div>
-            <div class="value">56%</div>
-          </div>
-        </div>
+          <h1>Create New Accounts</h1>
+          <div class="form-container">
+            <h2>Create an Account</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+    
+                <label for="role">Role:</label>
+                <input type="text" id="role" name="role" placeholder="Your role (e.g., Account,Client)" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Your password" required>
 
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+    
+                <input type="submit" value="Create Account">
+            </form>
+        </div>
         </div>
         <div class="notice-form">
-          <h1>Project Progress</h1>
-          <div class="simple-bar-chart">
-          
-            <div class="item" style="--clr: #5EB344; --val: 50">
-              <div class="label">Wood</div>
-              <div class="value">50%</div>
-            </div>
-            
-            <div class="item" style="--clr: #FCB72A; --val: 98">
-              <div class="label">Cement</div>
-              <div class="value">98%</div>
-            </div>
-            
-            <div class="item" style="--clr: #F8821A; --val: 67">
-              <div class="label">Metals</div>
-              <div class="value">67%</div>
-            </div>
-            
-            <div class="item" style="--clr: #E0393E; --val: 46">
-              <div class="label">Bricks</div>
-              <div class="value">46%</div>
-            </div>
-            
-            <div class="item" style="--clr: #963D97; --val: 89">
-              <div class="label">Concrete</div>
-              <div class="value">89%</div>
-            </div>
-            
-            <div class="item" style="--clr: #069CDB; --val: 56">
-              <div class="label">Clay</div>
-              <div class="value">56%</div>
-            </div>
-          </div>
+          <h1>System Backup</h1>
+
           </div>
           <div class="notice-form">
-            <h2>Publish Notice</h2>
+            <h1>Publish Notice</h1>
             <div class="noticearea">
               <form action="/submit" method="post">
               <input type="subject" name="Subject" placeholder="Subject">
-              <textarea class="textarea" placeholder="Your Message" rows="5" required></textarea>
+              <textarea class="textarea" placeholder="Your Message" rows="15" required></textarea>
             </div>
                 <div class="person">
                 <input type="checkbox" name="Project Manager" value="Project Manager">
@@ -155,7 +108,6 @@
                 </div>
             </form>
             </div>
-      </div>
     </main>
   </div>
   <script src="src/js/systemadmin.js"></script>
