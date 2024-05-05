@@ -93,7 +93,7 @@
     </main>
     <footer>
         <div class="footer-container">
-            <p>&copy; 2024 Construction Management System. All Rights Reserved.</p>
+            <p>&copy;2024 BuildMaster IT. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
