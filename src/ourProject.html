@@ -8,12 +8,25 @@
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <!-- Add your navigation links here -->
-    </nav>
-  </header>
-
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+        <div class="header_left">
+            <h1 class="logo">BuildMaster</h1>
+            <ul class="nav-links">
+                <li class="active"><a href="../index.php">Home</a></li>
+                <li><a href="../ourproject.html">Our Projects</a></li>
+                <li><a href="index.php">Feedback</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="login-signup">
+            <a href="login.html"><button class="btn">Login</button></a>
+            <button  class="btn"><a>Signup</a></button>
+        </div>
+    </div>
+</nav>
   <main>
     <section class="hero">
       <h1>Our Completed Projects</h1>
@@ -84,9 +97,10 @@
   </main>
 
   <footer>
-    <!-- Add your footer content here -->
-  </footer>
+    <div class="footer-container">
+        <p>&copy;2024 BuildMaster IT. All Rights Reserved.</p>
+    </div>
+</footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

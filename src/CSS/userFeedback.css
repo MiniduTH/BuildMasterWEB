@@ -43,7 +43,7 @@ h1{
   padding-left: 160px;
   padding-right:80px;
   width: 73ch;
-  animation: typing 5s steps(400), blink .10s step-end infinite alternate;
+  animation: typing 6s steps(500), blink .10s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
