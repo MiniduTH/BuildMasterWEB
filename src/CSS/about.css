@@ -1,0 +1,109 @@
+/* Reset and global styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ddd;
+    background-color: #222;
+}
+
+/* Header styles */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.content {
+    background-color: #333;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #ffa500;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #444;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.box h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffa500;
+}
+
+/* Social Media Icons Section */
+.social-media {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+    display: inline;
+}
+
+.social-icons li a {
+    display: inline;
+}
+
+.social-icons li img {
+    width: 40px; /* Increase icon size */
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition to hover effect */
+}
+
+.social-icons li img:hover {
+    transform: scale(1.2);
+}
+
+section.social-media {
+    background-color: rgba(43, 43, 41, 0.548);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;}
