@@ -3,7 +3,6 @@
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background-image: url("../img/hero-bg.jpg"); /* Add background image to hero section */
     background-size: cover;
     background-position: center;
 }
