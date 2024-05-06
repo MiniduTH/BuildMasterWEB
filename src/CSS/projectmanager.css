@@ -1,257 +1,259 @@
-/* CSS for Notification and Popup */
+/* General Styles */
 body {
-    background-image: url(../img/bg.jpeg);
- 
-}
-.notification {
-    position: relative;
-    
-}
-.name {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative; /* Ensure proper positioning */
-    left: 6%;
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
-    color: #333333;
-}
-.content{
+    margin: 0;
     font-family: Arial, sans-serif;
-    color: #000000;
-    font-size: 15px;
-}
-.head {
-    text-align: center;
-}
-h3{
-    text-align: center;
+    background-color: #1a1a1a;
+    color: #ddd;
 }
 
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main aside";
+    grid-template-columns: 250px 1fr 300px;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
 }
 
-.popup-content {
-    text-align: center;
-}
-
-.close {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-}
-
-.notification img {
-    width: 45px; /* Set the width of the images */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer;
-    float:right;
-    cursor: pointer;
-    float:right;
-}
-
-/* End of Notification and Popup CSS */
-
-/* CSS for Text Uploader Section */
-.container1 {
-    background-color: rgba(128, 128, 128, 0.6);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 500px; /* Fixed width */
-    margin: 20px auto;
-    padding: 30px;
-    border: 2px solid #007bff;
-
-      /* Adjusting the left and right margins */
-  margin-left: 20px; /* Change this value as needed */
-  margin-right: 20px; /* Change this value as needed */
-  
-  /* Changing the position */
-  position: relative; /* Change this value as needed (e.g., absolute, fixed, etc.) */
-}
-
-.h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #007bff;
-}
-
-.upload-section {
+/* Header Styles */
+header {
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.input {
-    width: calc(50% - 10px); /* Adjusted width for two files with spacing */
-    height: 40px; /* Fixed height */
-    padding: 10px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-}
-
-.button {
-    padding: 15px 30px;
-    background-color: rgba(255, 99, 71, 0.7);
+    padding: 20px;
+    background-color: #333;
     color: #fff;
-    border: none;
-    border-radius: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.notifications,
+.settings {
+    margin-right: 20px;
     cursor: pointer;
 }
 
-.button:hover {
-    background-color: #ff7f00;
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.text-item {
-    display: inline-block;
-    background-color: #fff;
+/* Sidebar Styles */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #2b2b2b;
+    color: #ddd;
     padding: 20px;
-    margin-right: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.nav-links li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+.projects-summary,
+.project-details {
+    background-color: #333;
+    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Chart */
-.chart-container {
-    max-width: 1300px;
-    margin: 70px auto 20px; /* Added space at the bottom */
+.graph-container {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.chart {
-
-    background-color: rgba(128, 128, 128, 0.6);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 600px;
-    margin: 10px auto 20px 20px;
-    padding: 20px;
-    border: 2px solid #007bff;
-    float:left;
-    
+.graph {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    border: 1px solid #ccc; /* Added border */
-    padding: 27px; /* Added padding for better appearance */
-
-    margin-top: -335px;
-    margin-left:620px; /* Change this value as needed */
-    margin-right: 20px; /* Change this value as needed */
-    
-    /* Changing the position */
-    position: relative;
- 
-}
-h3{
-    font-size: 30px;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .bar {
-    background-color: #007bff;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    position: relative;
+    width: 60px;
+    background-color: #4CAF50;
+    margin-bottom: 10px;
 }
 
-.bar::before {
-    content: attr(data-progress) "%";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: var(--progress); /* Use --progress variable */
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    transition: width 0.5s ease;
+.labels {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
+.form-group {
+    margin-bottom: 10px;
+}
 
-
-/* End of chart */
-
-/* Calander CSS */
-.calendar {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
-  }
-  
-  select,
-  input[type="number"],
-  textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-  }
-  
-  button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  textarea {
-    height: 100px;
-  }
-  
-
-/* End of calander */
-
-/* Notice CSS */
-.notice-board {
-    max-width: 500px;
-    margin: 50px auto; /* Adjusted margin for center alignment */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    float: left; /* Float to the left */
+    color: #ffc107;
 }
-.add-notice {
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #444;
+    color: #ddd;
+}
+
+.actions button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Aside Styles */
+aside {
+    grid-area: aside;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.notices,
+.event-calendar {
+    margin-bottom: 20px;
+}
+
+.notices h3,
+.event-calendar h3 {
+    color: #ffc107;
+}
+
+.calendar {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.month-year {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #ffc107;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    text-align: center;
+}
+
+.calendar-grid div {
+    background-color: #444;
+    color: #ddd;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calendar-grid div:hover {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.date-picker {
     margin-top: 20px;
 }
-textarea {
-    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
-    height: 100px;
+
+.date-picker label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffc107;
+}
+
+.date-picker input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #444;
+}
+
+/* Social Media Icons Section */
+.social-media {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media h3 {
+    color: #fff;
+    font-size: 24px;
     margin-bottom: 10px;
 }
-button {
-    display: block;
-    margin-top: 10px;
+
+.social-icons {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
 }
-  
-/* End of NOtice CSS */
+
+.social-icons li {
+    margin: 0 10px;
+    display: inline;
+}
+
+.social-icons li a {
+    display: inline;
+}
+
+.social-icons li img {
+    width: 40px; /* Increase icon size */
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition to hover effect */
+}
+
+.social-icons li img:hover {
+    transform: scale(1.2);
+}
+
+section.social-media {
+    background-color: rgba(43, 43, 41, 0.548);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
