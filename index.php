@@ -28,7 +28,7 @@ if ($_SESSION['status'] == 1){
                 <ul class="nav-links">
                     <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="src/ourproject.php">Our Projects</a></li>
-                    <li><a href="index.php">Feedback</a></li>
+                    <li><a href="src/viewfeedback.php">Feedback</a></li>
                     <li><a href="src/contact.php">Contact Us</a></li>
                     <li><a href="src/aboutus.php">About Us</a></li>
                 </ul>
