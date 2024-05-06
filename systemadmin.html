@@ -27,7 +27,7 @@
       </div>
       <div class="content">
         <div class="notice-form">
-          <h1>Create New Accounts</h1>
+          <h1>Create New Staff Accounts</h1>
           <div class="form-container">
             <h2>Create an Account</h2>
             <form action="/submit" method="post">
@@ -38,7 +38,12 @@
                 <input type="email" id="email" name="email" placeholder="Enter E-mail" required>
     
                 <label for="role">Role:</label>
-                <input type="text" id="role" name="role" placeholder="Enter The Role (e.g., Account,Client)" required>
+                <select id="role" name="client" required >
+                  <option value="Accountant">Accountant</option>
+                  <option value="SupplyManager">Supply Manager</option>
+                  <option value="ProjectManager">Project Manager</option>
+                  
+                </select><br>
     
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Enter Password" required>
@@ -50,16 +55,7 @@
             </form>
         </div>
         </div>
-        <div class="notice-form">
-          <h1>System Backup</h1>
-          <section class="backup-section">
-            <h2>Your Data is Safe</h2>
-            <p>We've got your back! Our secure backup system ensures that your valuable data is protected.</p>
-            <a href="google.com">
-              <button>Backup Now</button>
-          </a>
-        </section>
-          </div>
+       
           <div class="notice-form">
             <h1>Publish Notice</h1>
             <div class="noticearea">

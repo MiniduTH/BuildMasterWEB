@@ -194,3 +194,21 @@ input[type="submit"] {
   height: 340px;
 }
 
+#role {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#role option {
+  padding: 5px;
+}
+
+#role option:hover {
+  background-color: #ddd;
+}
