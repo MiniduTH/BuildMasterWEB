@@ -158,12 +158,13 @@ function addNotice() {
     const bars = document.querySelectorAll('.bar');
   
     bars.forEach(bar => {
-        const progress = bar.getAttribute('data-progress');
+        const progress = parseInt(bar.getAttribute('data-progress')); // Parse the progress value as integer
         bar.style.setProperty('--progress', `${progress}%`);
-
+        bar.innerHTML += `<span class="percentage-level">${progress}%</span>`; // Add percentage level inside the bar
     });
-  });
-  
+});
+
+
   //End ofchart
   
   //Calander

@@ -1,3 +1,14 @@
+/* Calendar */
+.calendar {
+    border: 2px solid #007bff; /* Add border */
+    border-radius: 15px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Set width to match half of the chart's width */
+    height: 200px; /* Set height */
+    margin-right: 20px; /* Match margin with chart */
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
 /* Adjusted styling for file uploader section */
 body{
     background-image: url(../img/bg.jpeg);
@@ -89,8 +100,8 @@ body{
 .delete-button {
     margin-left: 10px;
 }
-/* Chart */
-/* Chart */
+/* Chart CSS */
+
 .chart {
     background-color: rgba(128, 128, 128, 0.4);
     border-radius: 15px;
@@ -107,23 +118,40 @@ body{
 }
 
 .bar {
+    position: relative; /* Ensure relative positioning */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #007bff;
     color: white;
     padding: 15px;
     border-radius: 5px;
-    position: relative;
+    margin-bottom: 8px; /* Add margin bottom for spacing */
 }
 
 .bar::before {
     content: attr(data-progress) "%";
-    position: absolute;
-    top: 0;
-    left: 0; /* Position on the left */
-    width: var(--progress);
-    height: 100%;
+    position: absolute; /* Position percentage level relative to the bar */
+    top: 50%; /* Position vertically at the middle */
+    right: 5px; /* Adjust right positioning */
+    transform: translateY(-50%); /* Center vertically */
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
+    padding: 2px 6px; /* Add padding for better appearance */
+    font-size: 0.8em;
     transition: width 0.5s ease;
-    padding-left: 5px; /* Add padding for space between percentage and bar */
-    text-align: left; /* Align text to the left */
 }
+
+.customer-name {
+    font-weight: bold;
+}
+
+.percentage-level {
+    font-size: 0.8em;
+}
+
+
+
+
+
+/* End of chart CSS */
