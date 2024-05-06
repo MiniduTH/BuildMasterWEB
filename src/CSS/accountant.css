@@ -27,7 +27,7 @@ body {
   .container {
     display: flex;
     flex-direction: column;
-    height: 5opx;
+    height: 50px;
   }
 
   .containertodo{
@@ -59,10 +59,11 @@ body {
   
   .content {
     display: flex;
+    height: 10px;
     margin-left: 20px;
     flex-wrap: wrap;
     padding: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     flex-grow: 1;
   }
   
@@ -164,28 +165,6 @@ button {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for input fields */
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  margin-left: -10px;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Styling for submit button */
-input[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
 .backup-section {
   padding: 80px; /* Add some padding */
   text-align: center; /* Center the text */
@@ -201,43 +180,12 @@ label {
   font-weight: bold;
 }
 
-input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-button[type="submit"]:hover {
-  background-color: #45a049;
-}
-
 .project {
   margin-top: 30px;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.project h2 {
-  color: #333;
-  margin-top: 0;
-}
-
-.project p {
-  color: #666;
 }
 
 .results {
@@ -247,11 +195,6 @@ button[type="submit"]:hover {
     background-color: #f9f9f9;
   }
   
-  .result {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
   
   .result span:first-child {
     font-weight: bold;
@@ -259,6 +202,8 @@ button[type="submit"]:hover {
   
   .containeracc{
     font-weight: bold;
+    height: 300px;
+    height: px;
   }
 
   form {
