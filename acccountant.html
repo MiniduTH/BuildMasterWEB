@@ -28,29 +28,23 @@
         <div class="notice-form">
           <h1>Cash Tracker</h1>
           <div class="form-container">
-            <div class="container">
-                <div class="person">
-                    <form id="expense-form">
-                        <label for="amount"><h3>Enter Amount Paid:<h3></label>
-                        <input type="number" id="amount" placeholder="Enter amount..." step="0.01" required>
-                        <br>
-                        <label>Select Projects to Add:</label><br>
-                        <input type="checkbox" class="project-checkbox" id="project1" value="100"> Project 1<br>
-                        <input type="checkbox" class="project-checkbox" id="project2" value="150"> Project 2<br>
-                        <input type="checkbox" class="project-checkbox" id="project3" value="200"> Project 3<br>
-                        <input type="checkbox" class="project-checkbox" id="project4" value="120"> Project 4
-                        <br>
-                        <div class="submitbutton">
-                            <button type="button" onclick="calculateTotal()">Calculate Total</button>
-                        </div>
-                    </form>
+            <div class="containeracc">
+                <form>
+                  <label for="client">Select Client:</label>
+                  <select id="client" name="client">
+                    <option value="Client 01">Client 01</option>
+                    <option value="Client 02">Client 02</option>
+                    <option value="Client 03">Client 03</option>
+                    <!-- Add more options as needed -->
+                  </select>
+                  <label for="amount">Enter Amount:</label>
+                  <input type="number" id="amount" name="amount">
+                  <button type="submit">Submit</button>
+                </form>
+                <div class="results">
+                  <!-- Results will be displayed here -->
                 </div>
-                <p class="project-total" id="total-project1"></p>
-                <p class="project-total" id="total-project2"></p>
-                <p class="project-total" id="total-project3"></p>
-                <p class="project-total" id="total-project4"></p>
-                <p class="project-total" id="total-amount"></p>
-            </div>
+              </div>
         </div>
         </div>
         <div class="notice-form">
