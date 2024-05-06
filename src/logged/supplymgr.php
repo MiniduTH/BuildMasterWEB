@@ -134,21 +134,6 @@
 
 
 
-
-
-    
-    <?php
-echo '<td>    
-    <form action="inventoryedit.php" method="post">
-    <input type="hidden" name="item_no" value="' . $row["item_no"] . '">
-    <button type="submit" class="btn-update">Update</button></form>
-     <form action="deleteinventory.php" method="post">
-        <input type="hidden" name="item_no" value="' . $row["item_no"] . '">
-        <button type="submit" class="btn-delete">Delete</button>
-    </form>                              
-</td>';
-?>
-
 <style>
     
 </style>
