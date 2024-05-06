@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
-  <link rel="stylesheet" href="src/CSS/systemadmin.css">
-  <link rel="stylesheet" href="src/CSS/systemadmin.css">
+  <link rel="stylesheet" href="src/CSS/accountant.css">
 </head>
 <body>
   <div class="container">
     <header>
       <div class="header-info">
-        <div class="customers">WELCOME SYSTEM ADMINISTRATOR</div>
+        <div class="customers">WELCOME ACCOUNTANT</div>
       </div>
     </header>
     <main>
@@ -27,27 +26,25 @@
       </div>
       <div class="content">
         <div class="notice-form">
-          <h1>Create New Accounts</h1>
+          <h1>Cash Tracker</h1>
           <div class="form-container">
-            <h2>Create an Account</h2>
-            <form action="/submit" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter Name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter E-mail" required>
-    
-                <label for="role">Role:</label>
-                <input type="text" id="role" name="role" placeholder="Enter The Role (e.g., Account,Client)" required>
-    
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter Password" required>
-
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm The Password" required>
-    
-                <input type="submit" value="Create Account">
-            </form>
+            <div class="containeracc">
+                <form>
+                  <label for="client">Select Client:</label>
+                  <select id="client" name="client">
+                    <option value="Client 01">Client 01</option>
+                    <option value="Client 02">Client 02</option>
+                    <option value="Client 03">Client 03</option>
+                    <!-- Add more options as needed -->
+                  </select>
+                  <label for="amount">Enter Amount:</label>
+                  <input type="number" id="amount" name="amount">
+                  <button type="submit">Submit</button>
+                </form>
+                <div class="results">
+                  <!-- Results will be displayed here -->
+                </div>
+              </div>
         </div>
         </div>
         <div class="notice-form">
@@ -56,7 +53,7 @@
             <h2>Your Data is Safe</h2>
             <p>We've got your back! Our secure backup system ensures that your valuable data is protected.</p>
             <a href="google.com">
-              <button>Backup Now</button>
+              <button>Restore Now</button>
           </a>
         </section>
           </div>
@@ -68,9 +65,9 @@
               <textarea class="textarea" placeholder="Your Message" rows="15" required></textarea>
             </div>
                 <div class="person">
-                <input type="checkbox" name="Project Manager" value="ProjectManager">
+                <input type="checkbox" name="Project Manager" value="Project Manager">
                 <label for="Project Manager">Project Manager</label><br>
-                <input type="checkbox" name="Supply Manager" value="SupplyManager">
+                <input type="checkbox" name="Supply Manager" value="Supply Manager">
                 <label for="Supply Manager">Supply Manager</label><br>
                 <input type="checkbox" name="Accountant" value="Accountant">
                 <label for="Accountant">Accountant</label><br>
@@ -84,6 +81,6 @@
             </div>
     </main>
   </div>
-  <script src="src/js/systemadmin.js"></script>
+  <script src="src/js/acccountant.js"></script>
 </body>
 </html>
