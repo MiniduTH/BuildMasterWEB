@@ -103,55 +103,34 @@ body{
 /* Chart CSS */
 
 .chart {
-    background-color: rgba(128, 128, 128, 0.4);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 20px);
-    padding: 20px;
-    border: 2px solid #007bff;
+    width: 100%;
+    border: 2px solid #ccc; /* Add border to the chart */
+    text-align: center; /* Center align text */
+}
+
+.chart h3 {
+    margin: 0; /* Remove default margin */
+}
+
+.bar-container {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    border: 1px solid #ccc;
-    padding: 27px;
-    margin-right: 20px;
+    align-items: center;
 }
 
 .bar {
-    position: relative; /* Ensure relative positioning */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #007bff;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 8px; /* Add margin bottom for spacing */
+    height: 20px; /* Set height of the bar */
+    background-color: #007bff; /* Blue color for filled bar */
+    margin-bottom: 5px; /* Add margin between bars */
+    width: 50%; /* Set initial width of the bar */
+    transition: width 1s ease-in-out; /* Add smooth transition effect */
 }
 
-.bar::before {
-    content: attr(data-progress) "%";
-    position: absolute; /* Position percentage level relative to the bar */
-    top: 50%; /* Position vertically at the middle */
-    right: 5px; /* Adjust right positioning */
-    transform: translateY(-50%); /* Center vertically */
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    padding: 2px 6px; /* Add padding for better appearance */
-    font-size: 0.8em;
-    transition: width 0.5s ease;
-}
-
-.customer-name {
-    font-weight: bold;
-}
-
-.percentage-level {
-    font-size: 0.8em;
+.bar-text {
+    color: #000; /* Black color for text */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 5px; /* Add margin between text and bar */
 }
 
 
-
-
-
-/* End of chart CSS */
+/* ENd of chart CSS */
