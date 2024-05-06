@@ -1,0 +1,141 @@
+/* Reset and global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header styles */
+header {
+    background-color: #111;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffa500;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+}
+
+.feedback-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feedback-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffa500;
+}
+
+.feedback-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feedback-card {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-5px);
+}
+
+.feedback-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffa500;
+}
+
+.feedback-card p {
+    font-style: italic;
+}
+
+/* Social Media Icons Section */
+.social-media {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+    display: inline;
+}
+
+.social-icons li a {
+    display: inline;
+}
+
+.social-icons li img {
+    width: 40px; /* Increase icon size */
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition to hover effect */
+}
+
+.social-icons li img:hover {
+    transform: scale(1.2);
+}
+
+section.social-media {
+    background-color: rgba(43, 43, 41, 0.548);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;}
