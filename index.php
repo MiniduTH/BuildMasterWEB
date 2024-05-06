@@ -27,15 +27,15 @@ if ($_SESSION['status'] == 1){
                 <h1 class="logo">BuildMaster</h1>
                 <ul class="nav-links">
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="src/ourproject.html">Our Projects</a></li>
+                    <li><a href="src/ourproject.php">Our Projects</a></li>
                     <li><a href="index.php">Feedback</a></li>
-                    <li><a href="src/contact.html">Contact Us</a></li>
-                    <li><a href="src/aboutus.html">About Us</a></li>
+                    <li><a href="src/contact.php">Contact Us</a></li>
+                    <li><a href="src/aboutus.php">About Us</a></li>
                 </ul>
             </div>
             <div class="login-signup">
-                <a href="src/login.html"><button class="btn">Login</button></a>
-                <button  class="btn"><a href="src/signUp.html">Signup</a></button>
+                <a href="src/login.php"><button class="btn">Login</button></a>
+                <button  class="btn"><a href="src/signUp.php">Signup</a></button>
             </div>
         </div>
     </nav>
@@ -46,7 +46,7 @@ if ($_SESSION['status'] == 1){
             <div class="container_hero">
                 <h2>Welcome to BuildMaster</h2>
                 <p>Efficiently manage your construction projects from start to finish.</p>
-                <a href="src/login.html" class="btn">Get Started</a>
+                <a href="src/login.php" class="btn">Get Started</a>
             </div>
         </section>
     </div>
