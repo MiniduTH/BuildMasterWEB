@@ -2,9 +2,9 @@
 include "../config.php";
 session_start();
 
-$id = $_POST['item_no'];
+$item_no = $_POST['item_no'];
 
-mysqli_query($conn, "DELETE FROM inventory WHERE id=$item_no");
+mysqli_query($conn, "DELETE FROM inventory WHERE item_no=$item_no");
 
 mysqli_close($conn);
 

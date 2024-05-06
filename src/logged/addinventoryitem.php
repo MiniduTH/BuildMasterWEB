@@ -22,9 +22,8 @@
                 </ul>
             </div>
             <div class="login-signup">
-                <a href="login.html"><button class="btn">Login</button></a>
-                <button  class="btn"><a>Signup</a></button>
-            </div>
+                    <a href="../logOut.php"><button class="btn">Logout</button></a>
+                </div>
         </div>
     </nav>
 
