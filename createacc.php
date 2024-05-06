@@ -1,52 +1,55 @@
 <?php
-include "config.php";
 session_start();
 
-$email = $_POST['email'];
-$password = $_POST['password'];
-$accType = $_POST['accType'];
-$result = 0;
-$msg = "";
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "myDB";
 
-if ($accType == 'C') {
-    $select = "SELECT * FROM user WHERE email = '$email' AND password = '$password' ";
-    $result = $conn->query($select);
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_array();
-        $_SESSION['Name'] = $row['first_name'];
-        $_SESSION['email'] = $row['email'];
-        $msg = "<div class='message'>Logged in successfully</div><a href='logOut.php'><p>Log Out</p></a>";
-        $_SESSION['status'] = 1;
-        $_SESSION['role'] = 'client';
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: ". $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $role = $_POST["client"];
+    $password = $_POST["password"];
+    $confirm_password = $_POST["confirm-password"];
+
+    if ($password == $confirm_password) {
+       
+        if ($conn->query($sql) === TRUE) {
+            $msg = "New record created successfully";
+
+            // Insert into staff_logins table
+            $sql = "INSERT INTO staff_logins (email, password)
+            VALUES ('$email', '$password')";
+            $conn->query($sql);
+
+            // Insert into staff table
+            $sql = "INSERT INTO staff (name, email, role)
+            VALUES ('$name', '$email', '$role')";
+            $conn->query($sql);
+
+            
+            
+        } else {
+            $msg = "Error: ". $sql. "<br>". $conn->error;
+        }
     } else {
-        $msg = "<div class='message'>Login failed. Please try again.</div><a href='login.php'><p>Try again</p></a>";
-    } 
-} else {
-    // Handle staff login
-    $select = "SELECT * FROM staff_logins WHERE email = '$email' AND password = '$password' ";
-    $result = $conn->query($select);
-
-    if ($result->num_rows > 0) {
-
-        $select = "SELECT * FROM staff WHERE email = '$email' ";
-        $result = $conn->query($select);
-
-        $row =$result->fetch_array();
-
-        $_SESSION['Name'] = $row['name'];
-        $_SESSION['email'] = $row['email'];
-        $_SESSION['role'] = $row['role'];
-
-        $msg = "<div class='message'>Logged in successfully</div><a href='logOut.php'><p>Log Out</p></a>";
-        $_SESSION['status'] = 1;
-    } else {
-        $msg = "<div class='message'>Login failed. Please try again.</div><a href='login.php'><p>Try again</p></a>";
-    } 
+        $msg =   "Passwords do not match";
+    }
 }
 
 $conn->close();
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
@@ -85,7 +88,7 @@ $conn->close();
     <title>Login</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+
 <body>
     <!-- Navigation Bar -->
     <nav>
