@@ -6,15 +6,13 @@
   
   body {
     font-family: sans-serif, Arial;
-    position: relative;
+    background-image: url("../img/bg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
     margin: 0; /* Add margin: 0 to remove default margin */
-    background-color: rgba(30, 30, 30, 0.7);
   }
-  
   
   div.container {
     width: 100%;
@@ -71,10 +69,11 @@
   }
   
   .login-signup button {
-    margin-right: 20px; /* Add margin-right to add spacing between buttons */
+    margin-left: 10px;
+    margin-right: 10px; /* Add margin-right to add spacing between buttons */
   }
   
-  .login-signup {
+  .login-signup a {
     text-decoration: none;
     color: #fff;
   }
@@ -106,36 +105,3 @@
     font-size: 18px;
     margin-bottom: 10px;
   }
-
-  .dark-background {
-    position: relative;
-    background-image: url('../img/bgnew.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .dark-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Adjust the opacity value to your liking */
-    z-index: 1;
-  }
-  
-  /* Make sure the content appears on top of the overlay */
-  .nav,
-  .contnew,
-  .social-media {
-    position: relative;
-    z-index: 2;
-  }
-
-  .header_left{
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  
