@@ -54,11 +54,8 @@
 
     <!-- Header Content -->
     <div class="head">
-        <h1 class="name">Welcome Mrs.Priya Silva</h1>
-        <p class="content">
-            Welcome Mrs. Priya Silva!<br>
-            Excited to have you lead our construction management projects! Let's build success together.
-        </p>
+        <h1 class="name">Welcome <?php $_SESSION['Name']?></h1>
+       
     </div>
     <!-- End of Header Content -->
 

@@ -17,9 +17,6 @@ session_start();
 switch($_SESSION['role']){
     case 'client' : include "client.php";
     break;
-
-    case 'Accountant' : include "../client.php";
-    break;
                
     case 'Project Manager' : include "../client.php";
     break;

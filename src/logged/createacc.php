@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "src/config.php";
+include "../config.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
@@ -12,24 +12,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($password == $confirm_password) {
        
-        if ($conn->query($sql) === TRUE) {
-            $msg = "New record created successfully";
-
+        
+           
             // Insert into staff_logins table
             $sql = "INSERT INTO staff_logins (email, password)
             VALUES ('$email', '$password')";
-            $conn->query($sql);
+            $conn->query($sql); 
+            $msg = "New account created successfully";
+
 
             // Insert into staff table
-            $sql = "INSERT INTO staff (name, email, role)
-            VALUES ('$name', '$email', '$role')";
+            $sql = "INSERT INTO staff (name, email, role) VALUES ('$name', '$email', '$role')";
             $conn->query($sql);
 
             
             
-        } else {
-            $msg = "Error: ". $sql. "<br>". $conn->error;
-        }
+       
     } else {
         $msg =   "Passwords do not match";
     }
@@ -73,7 +71,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
@@ -83,19 +81,19 @@ $conn->close();
         <div class="header_left">
             <h1 class="logo">BuildMaster</h1>
             <ul class="nav-links">
-                <li class="active"><a href="../index.php">Home</a></li>
-                <li><a href="ourproject.php">Our Projects</a></li>
-                <li><a href="feedbacktst.php">Feedback</a></li>
-                <li><a href="src/contact.php">Contact Us</a></li>
-                <li><a href="index.php">About Us</a></li>
-            </ul>
+                    <li class="active"><a href="../../index.php">Dashboard</a></li>
+                    <li><a href="../ourproject.php">Our Projects</a></li>
+                    <li><a href="feedbacktst.php">Feedback</a></li>
+                    <li><a href="../contact.php">Contact Us</a></li>
+                    <li><a href="../../index.php">About Us</a></li>
+                </ul>
         </div>
         
     </div>
     </nav>
     <main>
     <?php echo $msg; ?>
-    <a href="../index.php"><p>Go back to home</p></a>
+    <a href="../../index.php"><p>Go back to home</p></a>
     </main>
     <footer>
     <div class="footer-container">
