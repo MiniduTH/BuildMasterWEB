@@ -16,7 +16,7 @@
                 <ul class="nav-links">
                     <li class="active"><a href="../index.php">Home</a></li>
                     <li><a href="ourproject.php">Our Projects</a></li>
-                    <li><a href="index.php">Feedback</a></li>
+                    <li><a href="VIEWFEEDBACK.PHP">Feedback</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
                     <li><a href="aboutus.php">About Us</a></li>
                 </ul>
