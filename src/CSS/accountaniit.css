@@ -1,0 +1,71 @@
+.glass-form {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #245976;
+  font-weight: bold;
+}
+
+.form-select,
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #645858;
+}
+
+.form-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: rgba(49, 49, 49, 0.822);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: rgba(95, 91, 91, 0.623);
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #302c2c;
+}
+
+.form-select option {
+  background-color: #333;
+  color: #fff;
+}
+
+.form-select option:hover {
+  background-color: #444;
+}
+
+.form-select option:checked {
+  background-color: #555;
+}

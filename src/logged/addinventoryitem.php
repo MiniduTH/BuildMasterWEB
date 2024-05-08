@@ -32,10 +32,10 @@
             <h2>Add Inventory Item</h2>
             <form action="postinventory.php" method="post">
                 
-            <div class="form-group">
-                    <label for="item_no">Item No:</label>
-                    <input type="number" id="item_no" name="item_no" required aria-label="Item Number">
-                </div>
+                <div class="form-group">
+                        <label for="item_no">Item No:</label>
+                        <input type="number" id="item_no" name="item_no" required aria-label="Item Number">
+                    </div>
 
                 <div class="form-group">
                     <label for="name">Name:</label>

@@ -26,6 +26,44 @@ session_start();
             font-size: 18px;
             color: #666;
         }
+ .project-status {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+   .project-status h2 {
+        margin-top: 0;
+    }
+
+   .project-status.budget {
+        font-size: 24px;
+        font-weight: bold;
+        color: #337ab7;
+    }
+
+   .project-status.end-date {
+        font-size: 18px;
+        color: #666;
+    }
+
+    /* Add some styling to the hello message */
+    #hello {
+    color: #fff; /* Change the text color to white */
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(0, 105, 143, 0.8); /* Add a blue background color with 80% opacity */
+    padding: 20px; /* Add some padding around the text */
+    border-radius: 10px; /* Add a border radius to make the corners rounded */
+    backdrop-filter: blur(5px); /* Add a blur effect to the background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to give the text some depth */
+}
+        
       
     </style>
 </head>
@@ -38,9 +76,9 @@ session_start();
                 <ul class="nav-links">
                     <li class="active"><a href="../../index.php">Dashboard</a></li>
                     <li><a href="../ourproject.php">Our Projects</a></li>
-                    <li><a href="feedbacktst.php">Feedback</a></li>
+                    <li><a href="feedbacktst.php">Your Feedbacks</a></li>
                     <li><a href="../contact.php">Contact Us</a></li>
-                    <li><a href="../../index.php">About Us</a></li>
+                    <li><a href="../aboutus.php">About Us</a></li>
                 </ul>
             </div>
             <div class="login-signup">
@@ -49,7 +87,7 @@ session_start();
         </div>
     </nav>
     
-    <h2 id="hello"> Hello <?php echo $_SESSION['Name'] . "," ?> </h2>
+    <h2 id="hello"> Hello <?php echo $_SESSION['Name']  ?> </h2>
 
     <!-- Project Status Component -->
     <div class="project-status">

@@ -23,16 +23,27 @@ include "config.php";
             <h1 class="logo">BuildMaster</h1>
             <ul class="nav-links">
                 <li class="active"><a href="../index.php">Home</a></li>
-                <li><a href="../ourproject.html">Our Projects</a></li>
+                <li><a href="ourproject.php">Our Projects</a></li>
                 <li><a href="viewfeedback.php">Feedback</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
                 <li><a href="aboutus.php">About Us</a></li>
             </ul>
         </div>
-        <div class="login-signup">
-            <a href="login.php"><button class="btn">Login</button></a>
-            <a href="signup.php"><button  class="btn">Signup</button></a>
-        </div>
+
+        <?php
+            if($_SESSION['status'] ==1){
+                echo '<div class="login-signup">
+                <a href="../logOut.php"><button class="btn">Logout</button></a>
+                </div>';
+            }else{
+               echo '<div class="login-signup">
+                <a href="login.php"><button class="btn">Login</button></a>
+                <a href="signup.php"><button  class="btn">Signup</button></a>
+                </div>';
+
+            }
+            ?>
+        
     </div>
 </nav>
 

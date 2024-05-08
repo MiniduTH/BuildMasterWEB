@@ -93,11 +93,11 @@ $conn->close();
         <div class="header_left">
             <h1 class="logo">BuildMaster</h1>
             <ul class="nav-links">
-                <li class="active"><a href="../index.php">Home</a></li>
+                <li class="active"><a href="../index.php">Dashboard</a></li>
                 <li><a href="ourproject.php">Our Projects</a></li>
                 <li><a href="feedbacktst.php">Feedback</a></li>
-                <li><a href="src/contact.php">Contact Us</a></li>
-                <li><a href="index.php">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="aboutus.php">About Us</a></li>
             </ul>
         </div>
         

@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+<?php
+  include "../config.php";
+  session_start();
+?>
+<title>Dashboard</title>
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/systemadmin.css">
 </head>
@@ -22,14 +21,15 @@
         </div>
     </div>
     <div class="login-signup">
-      <a href="login.php"><button class="btn">Login</button></a>
-      <button  class="btn"><a>Signup</a></button>
-    </div>
+                <a href="../logOut.php"><button class="btn">Logout</button></a>
+            </div>
   </nav>
   <div class="contnew">
     <header>
       <div class="header-info">
-        <div class="customers"><?php echo $_SESSION['role'];?></div>
+        <div class="customers"><?php echo $_SESSION['role'];?><br>
+        <?php echo $_SESSION['Name'];?>
+      </div>
       </div>
     </header>
     <main>
@@ -92,17 +92,7 @@
       </div>
     </main>
   </div>
-  <section class="social-media">
-    <div class="social-media_container">
-      <h3 class="heading">Follow us on</h3>
-      <ul class="social-icons">
-        <li><a href="#"><img src="../img/ig.png" alt="Instagram"></a></li>
-        <li><a href="#"><img src="../img/fb.png" alt="Facebook"></a></li>
-        <li><a href="#"><img src="../img/yt.png" alt="YouTube"></a></li>
-        <li><a href="#"><img src="../img/twitter.png" alt="Twitter"></a></li>
-      </ul>
-    </div>
-  </section>
+ 
   <script src="../js/systemadmin.js"></script>
 </body>
 </html>
