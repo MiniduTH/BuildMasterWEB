@@ -11,7 +11,7 @@ $sql = "UPDATE staff SET name=?, role=?, gender=? WHERE email=?";
 
 $stmt = $conn->prepare($sql);
 
-$stmt->bind_param("sss", $name, $role, $gender, $email);
+$stmt->bind_param("ssss", $name, $role, $gender, $email);
 
 $stmt->execute();
 
