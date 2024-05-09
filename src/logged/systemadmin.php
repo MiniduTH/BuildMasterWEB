@@ -126,9 +126,9 @@
                   echo "<td>" . $row["name"] . "</td>";
                   echo "<td>" . $row["role"] . "</td>";
                   echo  '<td>    
-                  <form action="inventoryedit.php" method="post">
+                  <form action="staffedit.php" method="post">
                   <input type="hidden" name="email" value="' . $row["email"] . '">
-                  <button type="submit" class="btn-update">Update</button></form>
+                  <button type="submit" class="btn-update">Edit</button></form>
 
                    <form action="" method="post">
                       <input type="hidden" name="email" value="' . $row["email"] . '">

@@ -63,7 +63,36 @@ session_start();
     backdrop-filter: blur(5px); /* Add a blur effect to the background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to give the text some depth */
 }
-        
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+/* Add a hover effect for buttons */
+.edit-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+}
+
       
     </style>
 </head>
@@ -94,4 +123,13 @@ session_start();
     <h2>Project Status</h2>
     <p class="budget">$10,000 remaining</p>
     <p class="end-date">End Date: <span id='end-date'>2025-01-01<span></p>
+</div>
+
+<div class="button-container">
+    <form action="clientedit.php" method="post">
+        <button class="edit-btn">Edit Account</button>
+    </form>
+    <form action="dltacc.php"  method="post">
+        <button class="delete-btn">Delete Account</button>
+    </form>
 </div>
