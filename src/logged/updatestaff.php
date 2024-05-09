@@ -2,16 +2,15 @@
 include "../config.php";
 session_start();
 
-$name = $_POST['naem'] ;
-$gender = $_POST['gender'];
+$name = $_POST['name'] ;
 $role = $_POST['role'];
 $email = $_POST['email'] ;
 
-$sql = "UPDATE staff SET name=?, role=?, gender=? WHERE email=?";
+$sql = "UPDATE staff SET name=?, role=? WHERE email=?";
 
 $stmt = $conn->prepare($sql);
 
-$stmt->bind_param("ssss", $name, $role, $gender, $email);
+$stmt->bind_param("sss", $name, $role,  $email);
 
 $stmt->execute();
 

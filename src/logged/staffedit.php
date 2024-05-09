@@ -25,17 +25,17 @@ $row = mysqli_fetch_assoc($result);
 <body>
   <div class="container1">
     <h2>Change Account Details</h2><div class="form">
-    <form id="change-form" action="accupdate.php" method="post">
+    <form id="change-form" action="updatestaff.php" method="post">
       <div class="form-group">
         <label for="first-name">Name:</label>
         <input type="text" id="first-name" name="name" value = "<?php echo $row["name"]?>">
       </div>
-     
+     <input  type="hidden" name="email" value="<?php echo $row["email"]?>">
       <div class="form-group">
-        <label for="gender">Role</label>
-        <select id="gender" name="gender" required>
+        <label for="role">Role</label>
+        <select id="role" name="role" required>
           <option value="Accountant">Accountant</option>
-          <option value="ProjectManager">ProjectManager</option>
+          <option value="Project Manager">Project Manager</option>
           <option value="Supply Manager">Supply Manager</option>
         </select>
       </div>
