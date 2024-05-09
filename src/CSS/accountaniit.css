@@ -69,3 +69,48 @@
 .form-select option:checked {
   background-color: #555;
 }
+
+.add-item-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-item-button:hover {
+  background-color: #3e8e41;
+}
+
+.btn-update {
+background-color: #4CAF50; /* Green */
+color: white;
+padding: 8px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.btn-update:hover {
+background-color: #3e8e41;
+}
+
+.btn-delete {
+
+background-color: #ff0000; /* Red */
+color: white;
+padding: 8px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top:2px;
+}
+
+.btn-delete:hover {
+background-color: #cc0000;
+}

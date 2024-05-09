@@ -7,7 +7,7 @@
     <title>Construction Management System</title>
     <link rel="stylesheet" href="../CSS/style.css">
     
-    <link rel="stylesheet" href="../CSS/feedback.css">
+    <link rel="stylesheet" href="../CSS/tableview.css">
 
     <style>
         .add-item-button {
@@ -63,8 +63,8 @@
                     <h1 class="logo">BuildMaster</h1>
                     <ul class="nav-links">
                         <li class="active"><a href="../../index.php">Dashboard</a></li>
-                        <li><a href="ourproject.php">Our Projects</a></li>
-                        <li><a href="index.php">Feedback</a></li>
+                        <li><a href="../ourproject.php">Our Projects</a></li>
+                        <li><a href="../viewfeedback">Feedback</a></li>
                         <li><a href="../contact.php">Contact Us</a></li>
                         <li><a href="../aboutus.php">About Us</a></li>
                     </ul>

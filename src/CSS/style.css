@@ -7,6 +7,7 @@
   body {
     font-family: sans-serif, Arial;
     background-image: url("../img/bg.jpeg");
+    backdrop-filter: blur(3px);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

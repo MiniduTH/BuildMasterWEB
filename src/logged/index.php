@@ -18,9 +18,6 @@ switch($_SESSION['role']){
 
     case 'client' : include "client.php";
     break;
-               
-    case 'Project Manager' : include "../client.php";
-    break;
 
     case 'Supply Manager' : include "supplymgr.php";
     break;
@@ -28,8 +25,10 @@ switch($_SESSION['role']){
     case 'System Admin' : include "systemadmin.php";
     break;
 
-    case 'Accountant' : include "accountantd.php";
+    case 'Accountant' : include "accountant.php";
     break;
+
+    default : include "client.php";
 }
 
 ?>

@@ -5,6 +5,7 @@
 <title>Dashboard</title>
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/systemadmin.css">
+  <link rel="stylesheet" href="../CSS/tableview.css">
 </head>
 <body>
   <nav>
@@ -90,6 +91,61 @@
           </div>
         </div>
       </div>
+      <div class="table-container">
+    <table>
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+            <tbody>
+                
+                <?php
+         
+                function deleteAcc($conn, $email) {
+                  $sql = "DELETE FROM staff WHERE email = '$email'";
+                  $conn->query($sql);
+              }
+
+              
+              if (isset($_POST['delete_acc'])) {
+                deleteAcc($conn,$_POST['email']);
+            }
+              
+     
+                $result = mysqli_query($conn, "SELECT * FROM staff");
+              
+
+                while ($row = mysqli_fetch_assoc($result)) {
+                  echo "<tr>";
+                  
+                  echo "<td>" . $row["email"] . "</td>";  
+                  echo "<td>" . $row["name"] . "</td>";
+                  echo "<td>" . $row["role"] . "</td>";
+                  echo  '<td>    
+                  <form action="inventoryedit.php" method="post">
+                  <input type="hidden" name="email" value="' . $row["email"] . '">
+                  <button type="submit" class="btn-update">Update</button></form>
+
+                   <form action="" method="post">
+                      <input type="hidden" name="email" value="' . $row["email"] . '">
+                      <input type="hidden" name="delete_acc" value="true">
+                      <button type="submit" class="btn-delete">Delete</button>
+                  </form>                              
+              </td>';
+                  echo "</tr>";
+                 
+                }
+                mysqli_close($conn);
+                ?>
+            </tbody>
+        </table>
+    </div>      
+
+
     </main>
   </div>
  

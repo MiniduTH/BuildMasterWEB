@@ -21,10 +21,23 @@
                     <li><a href="aboutus.php">About Us</a></li>
                 </ul>
             </div>
-            <div class="login-signup">
+            <?php
+        error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+     
+        
+
+            if($_SESSION['status'] ==1){
+                echo '<div class="login-signup">
+                <a href="../logOut.php"><button class="btn">Logout</button></a>
+                </div>';
+            }else{
+               echo '<div class="login-signup">
                 <a href="login.php"><button class="btn">Login</button></a>
-                <a href = "signup.php"><button  class="btn">Signup</button></a>
-            </div>
+                <a href="signup.php"><button  class="btn">Signup</button></a>
+                </div>';
+
+            }
+            ?>
         </div>
     </nav>
     

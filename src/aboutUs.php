@@ -49,7 +49,7 @@
             </div>
            <br>
             <section>
-                <h2>Vision & Misson</h2>
+                <h2>Vision & Mission</h2>
                 <p>Our vision sets the overall goal for our business. Our mission and the importance we give them is reflected throughout our organisation and in every aspect of how we do business, every day</p>
             </section>
             <br>

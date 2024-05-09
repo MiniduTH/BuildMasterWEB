@@ -1,6 +1,32 @@
 <?php
 include "../config.php";
 session_start();
+
+function deleteExpense($conn, $id) {
+    $sql = "DELETE FROM expenses WHERE id = '$id'";
+    $conn->query($sql);
+}
+
+function addExpense($conn, $email, $date, $description, $amount) {
+    $sql = "SELECT * FROM user WHERE email = '$email'";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        
+        $sql = "INSERT INTO expenses (email, date, description, amount) VALUES ('$email', '$date', '$description', $amount)";
+        $conn->query($sql);
+        echo "Added.";
+
+    } else {
+        echo "Error: The email does not exist in the users table.";
+    }
+}
+
+
+if (isset($_POST['delete_expense'])) {
+    deleteExpense($conn,$_POST['id']);
+}
+
+
 ?>
 
 <!-- index.php -->
@@ -10,55 +36,10 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Construction Management System</title>
+
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/feedback.css">
+    <link rel="stylesheet" href="../CSS/tableview.css">
     <link rel="stylesheet" href="../CSS/accountaniit.css">
-    <style>
-        .add-item-button {
-                display: inline-block;
-                padding: 10px 20px;
-                margin: 10px;
-                border-radius: 5px;
-                background-color: #4CAF50; /* Green */
-                color: white;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 16px;
-                transition: background-color 0.3s ease;
-        }
-
-        .add-item-button:hover {
-                background-color: #3e8e41;
-        }
-            
-        .btn-update {
-            background-color: #4CAF50; /* Green */
-            color: white;
-            padding: 8px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .btn-update:hover {
-            background-color: #3e8e41;
-        }
-
-        .btn-delete {
-
-        background-color: #ff0000; /* Red */
-        color: white;
-        padding: 8px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top:2px;
-        }
-
-    .btn-delete:hover {
-        background-color: #cc0000;
-    }
-    </style>
 
 </head>
 <body>
@@ -107,7 +88,12 @@ session_start();
   <input type="number" name="amount" step="0.01" required class="form-input">
   <button type="submit" name="add_expense" class="form-submit">Add Expense</button>
 </form>    
+<?php
 
+    if (isset($_POST['add_expense'])) {
+        addExpense($conn, $_POST['email'], $_POST['date'], $_POST['description'], $_POST['amount']);
+}
+?>
 </div>
 
 
@@ -144,36 +130,53 @@ session_start();
                 echo "<td>" . $expense['description'] . "</td>";
                 echo "<td>" . $expense['amount'] . "</td>";
                 echo  '<td>    
-                  <form action="inventoryedit.php" method="post">
-                  <input type="hidden" name="id" value="' . $expense["id"] . '">
-                  <button type="submit" class="btn-update">Update</button></form>
-                   <form action="deleteinventory.php" method="post">
-                      <input type="hidden" name="id" value="' . $expense["id"] . '">
-                      <button type="submit" class="btn-delete">Delete</button>
-                  </form>                              
+                  <form action="updateexpense.php" method="post">
+                  <input type="hidden" name="id" value="'  . $expense["id"] . '">
+                  <button type="submit" class="btn-update">Update</button>
+                  </form>
+
+                  <form action="" method="post">
+                  <input type="hidden" name="id" value="' .  $expense["id"]  . '">
+                  <input type="hidden" name="delete_expense" value="true">
+                  <button type="submit" class="btn-delete">Delete</button>
+              </form>
+                                           
               </td>';
 
                   echo "</tr>";
+
                  
                 }
               
-                mysqli_close($conn);
+               
                 ?>
             </tbody>
         </table>
-    </div>      
+    </div>    
+    
+   
+    
+    <?php
+             mysqli_close($conn);
+             ?>
 
 
 
 <script>
+     
+
     const addExpenseButton = document.getElementById('addExpenseButton');
     const expenseForm = document.getElementById('expenseForm');
 
     addExpenseButton.addEventListener('click', function() {
     if (expenseForm.style.display === 'none') {
         expenseForm.style.display = 'block';
+        
+        addExpenseButton.innerText = 'Close';
+
     } else {
         expenseForm.style.display = 'none';
+        addExpenseButton.innerText = 'Add an Expense';
     }
     });
 
