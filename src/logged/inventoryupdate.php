@@ -15,5 +15,10 @@ $stmt->execute();
 $stmt->close();
 $conn->close();
 
-header('location: supplymgr.php');
+
+
+echo "<script>alert('Item stock update successfully!');</script>";
+        echo "<script>window.location.href='../../index.php';</script>";
+
+
 ?>

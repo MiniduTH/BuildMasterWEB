@@ -13,7 +13,7 @@
         <div class="header_left">
             <h1 class="logo">BuildMaster</h1>
             <ul class="nav-links">
-                <li class="active"><a href="../../index.php">Home</a></li>
+                <li class="active"><a href="../../index.php">Dashboard</a></li>
                 <li><a href="../ourproject.php">Our Projects</a></li>
                 <li><a href="../viewFeedback.php">Feedback</a></li>
                 <li><a href="../Contact.php">Contact Us</a></li>
@@ -68,6 +68,10 @@
             </form>
           </div>
         </div>
+
+
+
+
         <div class="notice-form">
           <h1>Publish Notice</h1>
           <div class="noticearea">

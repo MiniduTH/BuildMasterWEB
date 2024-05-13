@@ -14,5 +14,9 @@ $stmt->execute();
 $stmt->close();
 $conn->close();
 
-header('location: feedbacktst.php');
+echo "<script>alert('Feedback Updated successfully ');</script>";
+        echo "<script>window.location.href='../../index.php';</script>";
+
+header('location: supplymgr.php');
+
 ?>
